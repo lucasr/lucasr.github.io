@@ -1,0 +1,15 @@
+title: Lucas Rocha
+tagline: Lucas Rocha
+description: Lucas Rocha's personal website.
+canonical: http://lucasr.org
+
+owner:
+  name: Lucas Rocha
+  bio: UI Frameworks at Facebook. Formerly at Mozilla, GNOME, litl, and Nokia.
+  email: lucasr@lucasr.org
+  twitter: lucasratmundo
+  linkedin: lucasr
+  github: lucasr
+
+markdown: kramdown
+highlighter: rouge

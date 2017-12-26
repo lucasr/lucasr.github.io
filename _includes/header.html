@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+
+  <head>
+
+    <meta charset="utf-8">
+
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="{{ page.description }}">
+    <meta name="keywords" content="{{ page.tags | join: ', ' }}">
+
+    <title>{% if page.title %}{{ page.title }} — {% endif %}{{ site.title }}</title>
+
+    <link rel="profile" href="http://gmpg.org/xfn/11" />
+
+    <link rel='stylesheet' id='google-webfonts' href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700|Source+Serif+Pro:400,700'>
+    <link rel="stylesheet" id='bootstrap-css' href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+    <link rel='stylesheet' id='style-css' href='{{ site.url }}/styles/style.css?ver=0.1.0' type='text/css' media='all' />
+
+    <meta property="og:locale" content="{{ site.opengraph.locale }}">
+    <meta property="og:title" content="{% if page.title %}{{ page.title }} &#8211; {% endif %}{{ site.title }}">
+    <meta property="og:description" content="{% if page.description %}{{ page.description | strip_html | strip_newlines | truncate: 120 }}{% else %}{{ page.content | strip_html | strip_newlines | truncate: 120 }}{% endif %}">
+    <meta property="og:url" content="{{ site.url }}{{ page.url }}">
+    <meta property="og:site_name" content="{{ site.title }}">
+    {% if page.image %}
+    <meta property="og:image" content="{{ page.image }}">
+    {% endif %}
+
+    <link href="{{ site.url }}/feed.xml" type="application/atom+xml" rel="alternate" title="{{ site.title }} Feed">
+  </head>
+
+  <body class="home blog">
+
+    <div id="page" class="container site">
+
+      <header class="site-header">
+        <h1>
+            <a href="{{ site.url }}">{{ site.title }}</a>
+        </h1>
+      </header>
+
