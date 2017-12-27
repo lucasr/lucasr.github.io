@@ -44,13 +44,13 @@ and switch tabs with a single tap, just like on Firefox on desktop.
 
 The toolbar got revamped with a cleaner layout and simpler state changes.
 
-[<img class="alignnone img-fluid size-full wp-image-4078" src="http://lucasr.org/wp-content/uploads/2014/12/Screenshot_2014-11-29-20-53-16.png" alt="" width="960" height="652" srcset="http://lucasr.org/wp-content/uploads/2014/12/Screenshot_2014-11-29-20-53-16-588x400.png 588w, http://lucasr.org/wp-content/uploads/2014/12/Screenshot_2014-11-29-20-53-16-471x320.png 471w, http://lucasr.org/wp-content/uploads/2014/12/Screenshot_2014-11-29-20-53-16-294x200.png 294w, http://lucasr.org/wp-content/uploads/2014/12/Screenshot_2014-11-29-20-53-16.png 960w" sizes="(max-width: 960px) 100vw, 960px" />](http://lucasr.org/wp-content/uploads/2014/12/Screenshot_2014-11-29-20-53-16.png)
+[<img class="alignnone img-fluid size-full wp-image-4078" src="https://lucasr.org/wp-content/uploads/2014/12/Screenshot_2014-11-29-20-53-16.png" alt="" width="960" height="652" srcset="https://lucasr.org/wp-content/uploads/2014/12/Screenshot_2014-11-29-20-53-16-588x400.png 588w, https://lucasr.org/wp-content/uploads/2014/12/Screenshot_2014-11-29-20-53-16-471x320.png 471w, https://lucasr.org/wp-content/uploads/2014/12/Screenshot_2014-11-29-20-53-16-294x200.png 294w, https://lucasr.org/wp-content/uploads/2014/12/Screenshot_2014-11-29-20-53-16.png 960w" sizes="(max-width: 960px) 100vw, 960px" />](https://lucasr.org/wp-content/uploads/2014/12/Screenshot_2014-11-29-20-53-16.png)
 
 Furthermore, the fullscreen tab panel—accessible from the toolbar—gives you a
 nice visual overview of your tabs and sets the stage for more advanced features
 around tab management in future releases.
 
-[<img class="alignnone img-fluid size-full wp-image-4080" src="http://lucasr.org/wp-content/uploads/2014/12/Screenshot_2014-11-29-20-51-55.png" alt="" width="960" height="652" srcset="http://lucasr.org/wp-content/uploads/2014/12/Screenshot_2014-11-29-20-51-55-588x400.png 588w, http://lucasr.org/wp-content/uploads/2014/12/Screenshot_2014-11-29-20-51-55-471x320.png 471w, http://lucasr.org/wp-content/uploads/2014/12/Screenshot_2014-11-29-20-51-55-294x200.png 294w, http://lucasr.org/wp-content/uploads/2014/12/Screenshot_2014-11-29-20-51-55.png 960w" sizes="(max-width: 960px) 100vw, 960px" />](http://lucasr.org/wp-content/uploads/2014/12/Screenshot_2014-11-29-20-51-55.png)
+[<img class="alignnone img-fluid size-full wp-image-4080" src="https://lucasr.org/wp-content/uploads/2014/12/Screenshot_2014-11-29-20-51-55.png" alt="" width="960" height="652" srcset="https://lucasr.org/wp-content/uploads/2014/12/Screenshot_2014-11-29-20-51-55-588x400.png 588w, https://lucasr.org/wp-content/uploads/2014/12/Screenshot_2014-11-29-20-51-55-471x320.png 471w, https://lucasr.org/wp-content/uploads/2014/12/Screenshot_2014-11-29-20-51-55-294x200.png 294w, https://lucasr.org/wp-content/uploads/2014/12/Screenshot_2014-11-29-20-51-55.png 960w" sizes="(max-width: 960px) 100vw, 960px" />](https://lucasr.org/wp-content/uploads/2014/12/Screenshot_2014-11-29-20-51-55.png)
 
 ### Development process
 
