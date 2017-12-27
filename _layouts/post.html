@@ -1,35 +1,8 @@
 {% include header.html %}
-
-      <article id="post-{{ page.id }}">
-
-        <header class="entry-header">
-
-          <hgroup>
-            <h1 class="entry-title">
-              <a href="{{ page.url }}" title="Permalink to {{ page.title }}" rel="bookmark">{{ page.title }}</a>
-            </h1>
-
-            <h2 class="entry-date">{{ page.date | date: "%B %d, %Y" }}</h2>
-          </hgroup>
-
-          {% if page.image %}
-          <img class="img-fluid" src="{{ page.image }}" class="entry-image"/>
-          {% endif %}
-
-        </header> <!-- .entry-header -->
-
-        <div class="entry-content">
-          {{ content }}
-        </div> <!-- .entry-content -->
-
-       <div class="entry-meta">
-         <hr/>
-         <p>
-           <span class="entry-author">{{ site.owner.name }}</span>
-           {{ site.owner.bio }}
-         </p>
-       </div> <!-- .entry-meta -->
-
-     </article> <!-- #post -->
-
+{% assign id = page.id %}
+{% assign url = page.url %}
+{% assign title = page.title %}
+{% assign date = page.date %}
+{% assign image = page.image %}
+{% include post.html %}
 {% include footer.html %}

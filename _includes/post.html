@@ -1,0 +1,31 @@
+      <article id="post-{{ id }}">
+
+        <header class="entry-header">
+
+          <hgroup>
+            <h1 class="entry-title">
+              <a href="{{ url }}" title="Permalink to {{ title }}" rel="bookmark">{{ title }}</a>
+            </h1>
+
+            <h2 class="entry-date">{{ date | date: "%B %d, %Y" }}</h2>
+          </hgroup>
+
+          {% if image %}
+          <img class="img-fluid" src="{{ image }}" class="entry-image"/>
+          {% endif %}
+
+        </header> <!-- .entry-header -->
+
+        <div class="entry-content">
+          {{ content }}
+        </div> <!-- .entry-content -->
+
+       <div class="entry-meta">
+         <hr/>
+         <p>
+           <span class="entry-author">{{ site.owner.name }}</span>
+           {{ site.owner.bio }}
+         </p>
+       </div> <!-- .entry-meta -->
+
+     </article> <!-- #post -->
