@@ -29,7 +29,7 @@
     <meta property="og:image" content="{{ page.image }}">
     {% endif %}
 
-    <link href="{{ site.url }}/feed.xml" type="application/atom+xml" rel="alternate" title="{{ site.title }} Feed">
+    <link href="{{ site.url }}/feed" type="application/atom+xml" rel="alternate" title="{{ site.title }} Feed">
   </head>
 
   <body>
@@ -40,7 +40,7 @@
         <a class="navbar-brand" href="/">{{ site.title }}</a>
         <ul class="navbar-nav ml-auto">
           <li class="nav-item">
-            <a class="nav-link" aria-label="Feed" href="#"><i class="fa fa-feed"></i></a>
+            <a class="nav-link" aria-label="Feed" href="/feed"><i class="fa fa-feed"></i></a>
           </li>
           {% if site.owner.twitter %}
           <li class="nav-item">
