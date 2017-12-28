@@ -23,8 +23,8 @@ tags:
   - planet
   - rewrite
 ---
-I [joined Mozilla](http://lucasr.org/2011/06/14/joining-mozilla/ "Joining
-Mozilla") 3 years, 4 months, and 6 days ago. Time flies!
+I [joined Mozilla](http://lucasr.org/2011/06/14/joining-mozilla/) 3 years, 4
+months, and 6 days ago. Time flies!
 
 I was very lucky to join the company a few months before the Firefox Mobile
 team decided to rewrite the product from scratch to make it more competitive on
