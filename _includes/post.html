@@ -3,7 +3,7 @@
         <header class="entry-header">
 
           <hgroup>
-            <h1 class="entry-title">
+            <h1 class="entry-title text-center">
               <a href="{{ url }}" title="Permalink to {{ title }}" rel="bookmark">{{ title }}</a>
             </h1>
 
@@ -18,14 +18,15 @@
 
         <div class="entry-content">
           {{ content }}
-        </div> <!-- .entry-content -->
 
-       <div class="entry-meta">
-         <hr/>
-         <p>
-           <span class="entry-author">{{ site.owner.name }}</span>
-           {{ site.owner.bio }}
-         </p>
-       </div> <!-- .entry-meta -->
+          <div class="entry-meta">
+            <hr/>
+            <p>
+              <span class="entry-author">{{ site.owner.name }}</span>
+              {{ site.owner.bio }}
+            </p>
+          </div> <!-- .entry-meta -->
+
+        </div> <!-- .entry-content -->
 
      </article> <!-- #post -->

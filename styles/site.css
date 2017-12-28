@@ -3,24 +3,16 @@
 body {
   font-family: 'Source Serif Pro', serif;
   font-size: 20px;
-  color: #444444;
   font-weight: 400;
   margin-bottom: 30px;
 }
 
 h1,
 h2,
-h3 {
+h3,
+h4 {
   font-family: 'Source Sans Pro', sans-serif;
   font-weight: bold;
-}
-
-.pull-quote {
-  font-size: 1.3em;
-  text-align: center;
-  line-height: 1.3em;
-  margin-top: 1.6em;
-  margin-bottom: 1.3em;
 }
 
 li {
@@ -39,41 +31,18 @@ blockquote p {
   font-size: 0.9em;
 }
 
-/* Header */
+/* Site */
 
-.site-header {
-  display: block;
-  border-bottom: 1px solid #dddddd;
-  margin-bottom: 0px;
-}
-
-.site-header > h1 {
-  font-size: 0.75em;
-  text-transform: uppercase;
-  color: #444444;
-  margin: 0px;
-}
-
-.site-header > h1 > a,
-.site-header > h1 > a:hover,
-.site-header > h1 > a:active,
-.site-header > h1 > a:visited {
-  color: #444444;
-}
-
-.site-header > h1 > a:hover {
-  text-decoration: none;
-  color: #666666;
+.site {
+  padding-left: 0px;
+  padding-right: 0px;
 }
 
 /* Entry */
 
-.entry-title {
+.entry-header > hgroup {
   margin-top: 40px;
-  margin-bottom: 0.2em;
-  text-align: center;
-  padding-left: 10px;
-  padding-right: 10px;
+  margin-bottom: 40px;
 }
 
 .entry-title a,
@@ -93,26 +62,17 @@ blockquote p {
   font-weight: normal;
   text-align: center;
   text-transform: uppercase;
-  padding-left: 10px;
-  padding-right: 10px;
-  margin: 0px;
   color: #777777;
 }
 
-.entry-image {
+.entry-content {
   margin-top: 1.4em;
 }
 
-.entry-summary,
+.entry-title,
 .entry-content {
   padding-left: 100px;
-  padding-right: 100px;  
-  margin-top: 1.4em;
-}
-
-.entry-meta {
-  margin-left: 100px;
-  margin-right: 100px;
+  padding-right: 100px;
 }
 
 .entry-meta {
@@ -120,7 +80,6 @@ blockquote p {
   font-size: 0.85em;
   display: block;
   margin-top: 30px;
-  padding-bottom: 50px;
 }
 
 .entry-author {
@@ -128,12 +87,6 @@ blockquote p {
   font-style: normal;
   margin-right: 1px;
   color: #333333;
-}
-
-.entry-meta > p {
-  line-height: 1.3em;
-  margin-top: 20px;
-  margin-bottom: 0px;
 }
 
 .entry-meta > hr {
@@ -192,143 +145,36 @@ blockquote p {
   margin-bottom: 0px;
 }
 
-/* archives */
-
-.home .archive {
-  padding-left: 100px;
-  padding-right: 100px;
-}
-
-.archive-title {
-  font-family: "ff-tisa-web-pro",serif;
-  margin-top: 30px;
-  margin-bottom: 40px;
-  text-align: center;
-  color: #666666;
-  padding-left: 10px;
-  padding-right: 10px;
-}
-
-.archive .entry-title {
-  font-size: 1.1em;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  padding-left: 20px;
-  padding-right: 20px;
-  margin-top: 0px;
-  margin-bottom: 0px;
-}
-
-.archive .entry-date {
-  font-size: 0.65em;
-  line-height: 1.3em;
-  margin-top: 6px;
-}
-
-.archive .entry-image {
-  margin-top: 0.4em;
-  border: 1px solid #dddddd;
-}
-
-.archive .entry-image:hover {
-  border: 1px solid #cccccc;
-}
-
-.archive .entry-summary,
-.archive .entry-content {
-  font-size: 0.8em;
-  padding-left: 0px;
-  padding-right: 0px;
-  margin-top: 1em;
-  line-height: 1.3em;
-}
-
 /* Responsive bits */
-
-@media (max-width: 480px) {
-  .entry-meta {
-    padding-top: 20px;
-    padding-bottom: 20px;
-  }
-
-  .entry-meta > .avatar {
-    float: none;
-    margin: 0px auto;
-    margin-bottom: 16px;
-  }
-
-  .entry-image .caption-text,
-  .wp-caption .wp-caption-text {
-    text-align: center;
-  }
-}
 
 @media (max-width: 767px) {
   body {
-    padding-left: 0px;
-    padding-right: 0px;
+    font-size: 18px;
   }
 
   .entry-title,
-  .archive-title {
-    font-size: 1.6em;
-    line-height: 1em;
-  }
-
-  .archive .entry-title {
-    line-height: 1.1em;
-    white-space: normal;
-    overflow: visible;
-  }
-
-  .thumbnails,
-  .home .archive,
-  .entry-summary,
   .entry-content {
     padding-left: 20px;
     padding-right: 20px;
-  }
-
-  .entry-meta > p {
-    margin-top: 3px;
-  }
-
-  .home #searchform,
-  .entry-meta {
-    margin-left: 20px;
-    margin-right: 20px;
   }
 }
 
 @media (min-width: 768px) {
   body {
+    font-size: 20px;
   }
 }
 
 @media (min-width: 768px) and (max-width: 979px) {
-  body {
-    padding-left: 0px;
-    padding-right: 0px;
-  }
-
-  .home .archive,
-  .entry-summary,
+  .entry-title,
   .entry-content {
-    padding: 0px;
-    padding-left: 0px;
-    padding-right: 0px;
-  }
-
-  .home #searchform,
-  .entry-meta {
-    margin-left: 0px;
-    margin-right: 0px;
+    padding-left: 20px;
+    padding-right: 20px;
   }
 }
 
 @media (min-width: 980px) {
   .container {
-    width: 960px;
+    max-width: 960px;
   }
 }
