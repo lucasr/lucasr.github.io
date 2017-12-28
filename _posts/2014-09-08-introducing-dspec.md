@@ -44,7 +44,7 @@ Specs can define various aspects of the baseline grid, keylines, and spacing
 markers such as visibility, offset, size, color, etc.
 
 <div id="attachment_3992" style="width: 1090px" class="wp-caption alignnone">
-  <a href="http://lucasr.org/wp-content/uploads/2014/09/2014-09-08-13.02.51.png"><img class="size-full wp-image-3992" src="http://lucasr.org/wp-content/uploads/2014/09/2014-09-08-13.02.51.png" alt="Baseline grid, keylines, and spacing markers in action." width="1080" height="649" srcset="http://lucasr.org/wp-content/uploads/2014/09/2014-09-08-13.02.51-665x400.png 665w, http://lucasr.org/wp-content/uploads/2014/09/2014-09-08-13.02.51-532x320.png 532w, http://lucasr.org/wp-content/uploads/2014/09/2014-09-08-13.02.51-332x200.png 332w, http://lucasr.org/wp-content/uploads/2014/09/2014-09-08-13.02.51.png 1080w" sizes="(max-width: 1080px) 100vw, 1080px" /></a>
+  <a href="http://lucasr.org/wp-content/uploads/2014/09/2014-09-08-13.02.51.png"><img class="size-full img-fluid wp-image-3992" src="http://lucasr.org/wp-content/uploads/2014/09/2014-09-08-13.02.51.png" alt="Baseline grid, keylines, and spacing markers in action." width="1080" height="649" srcset="http://lucasr.org/wp-content/uploads/2014/09/2014-09-08-13.02.51-665x400.png 665w, http://lucasr.org/wp-content/uploads/2014/09/2014-09-08-13.02.51-532x320.png 532w, http://lucasr.org/wp-content/uploads/2014/09/2014-09-08-13.02.51-332x200.png 332w, http://lucasr.org/wp-content/uploads/2014/09/2014-09-08-13.02.51.png 1080w" sizes="(max-width: 1080px) 100vw, 1080px" /></a>
   
   <p class="wp-caption-text">
     Baseline grid, keylines, and spacing markers in action.
@@ -67,7 +67,7 @@ top of a view is to enclose it in a
 can take an _designSpec_ XML attribute pointing to the spec resource. For
 example:
 
-```
+```xml
 <DesignSpecFrameLayout
     android:layout_width="match_parent"
     android:layout_height="match_parent"

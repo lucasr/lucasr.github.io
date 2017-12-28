@@ -16,7 +16,9 @@
 
     <link rel='stylesheet' id='google-webfonts' href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700|Source+Serif+Pro:400,700'>
     <link rel="stylesheet" id='bootstrap-css' href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
-    <link rel='stylesheet' id='style-css' href='{{ site.url }}/styles/site.css?ver=0.1.0' type='text/css' media='all' />
+    <link rel="stylesheet" id="fontawesome-css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel='stylesheet' id='highlight-css' href='{{ site.url }}/styles/highlight.css'>
+    <link rel='stylesheet' id='style-css' href='{{ site.url }}/styles/site.css'>
 
     <meta property="og:locale" content="{{ site.opengraph.locale }}">
     <meta property="og:title" content="{% if page.title %}{{ page.title }} &#8211; {% endif %}{{ site.title }}">
@@ -34,20 +36,32 @@
 
     <div id="page" class="container site">
 
-      <nav class="navbar navbar-expand-md navbar-dark bg-dark">
-        <a class="navbar-brand" href="/">Lucas Rocha</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link" href="/about">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="/archives">Archives</a>
-            </li>
-          </ul>
-        </div>
+      <nav class="navbar navbar-expand navbar-light">
+        <a class="navbar-brand" href="/">{{ site.title }}</a>
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" aria-label="Feed" href="#"><i class="fa fa-feed"></i></a>
+          </li>
+          {% if site.owner.twitter %}
+          <li class="nav-item">
+              <a class="nav-link" aria-label="Twitter" href="https://twitter.com/{{ site.owner.twitter }}"><i class="fa fa-twitter"></i></a>
+          </li>
+          {% endif %}
+          {% if site.owner.instagram %}
+          <li class="nav-item">
+            <a class="nav-link" aria-label="Instagram" href="https://instagram.com/{{ site.owner.instagram }}"><i class="fa fa-instagram"></i></a>
+          </li>
+          {% endif %}
+          {% if site.owner.github %}
+          <li class="nav-item">
+            <a class="nav-link" aria-label="Github" href="https://github.com/{{ site.owner.github }}"><i class="fa fa-github-alt"></i></a>
+          </li>
+          {% endif %}
+          {% if site.owner.linkedin %}
+          <li class="nav-item">
+            <a class="nav-link" aria-label="LinkedIn" href="https://linkedin.com/in/{{ site.owner.linkedin }}"><i class="fa fa-linkedin"></i></a>
+          </li>
+          {% endif %}
+        </ul>
       </nav>
 
