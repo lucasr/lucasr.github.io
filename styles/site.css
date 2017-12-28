@@ -56,7 +56,7 @@ li {
 
 .entry-date {
   font-family: 'Source Sans Pro', sans-serif;
-  font-size: 0.75em;
+  font-size: 0.8em;
   font-weight: normal;
   text-align: center;
   text-transform: uppercase;
@@ -96,6 +96,7 @@ li {
 }
 
 pre.highlight {
+  font-size: 0.8em;
   padding: 10px;
 }
 
