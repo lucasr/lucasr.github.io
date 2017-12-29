@@ -1,0 +1,6 @@
+<picture class="figure" {% if include.width %}style="width: {{ include.width }};"{% endif %}>
+  <img class="figure-img img-fluid {{ include.class }}" src="{{ include.src }}" title="{% if include.alt %}{{ include.alt }}{% elsif include.caption %}{{ include.caption }}{% endif %}"/>
+  {% if include.caption %}
+  <figcaption class="figure-caption">{{ include.caption }}</figcaption>
+  {% endif %}
+</picture>
