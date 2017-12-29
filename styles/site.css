@@ -33,8 +33,9 @@ h6 {
   padding-bottom: 0px;
 }
 
-.navbar-brand {
+.navbar-light .navbar-brand {
   text-transform: uppercase;
+  color: rgba(0,0,0,.6);
 }
 
 /* Entry */
@@ -42,6 +43,10 @@ h6 {
 .entry-header > hgroup {
   margin-top: 45px;
   margin-bottom: 30px;
+}
+
+.entry-title {
+  line-height: 1.1em;
 }
 
 .entry-title a,
