@@ -1,10 +1,7 @@
 ---
-id: 2825
 title: Introducing Pattrn
 date: 2012-05-07T17:53:03+00:00
-author: Lucas Rocha
 layout: post
-guid: http://lucasr.org/?p=2825
 permalink: /2012/05/07/introducing-pattrn/
 image: /wp-content/uploads/2012/05/intro-pattrn.png
 categories:

@@ -1,10 +1,7 @@
 ---
-id: 3161
 title: Almost like a phone, more like a tablet
 date: 2012-11-07T23:10:39+00:00
-author: Lucas Rocha
 layout: post
-guid: http://lucasr.org/?p=3161
 permalink: /2012/11/07/almost-like-a-phone-more-like-a-tablet/
 image: /wp-content/uploads/2012/11/nexus7-design.png
 categories:
@@ -37,12 +34,8 @@ On the other hand, the Nexus 7 behaves "almost" like a phone in portrait and
 "more like" a tablet in landscape. Therefore, UIs for 7-inch devices will
 likely end up blending elements from both phone and 10-inch tablet layouts.
 
-<div id="attachment_3165" style="width: 510px" class="wp-caption aligncenter">
-  <a href="http://lucasr.org/wp-content/uploads/2012/11/pattrn-7.png"><img class="size-full wp-image-3165   " style="border: 0px none;" src="http://lucasr.org/wp-content/uploads/2012/11/pattrn-7-thumb.png" width="500" height="199" srcset="http://lucasr.org/wp-content/uploads/2012/11/pattrn-7-thumb-300x119.png 300w, http://lucasr.org/wp-content/uploads/2012/11/pattrn-7-thumb.png 500w" sizes="(max-width: 500px) 100vw, 500px" /></a>
-  <p class="wp-caption-text">
-    Click to see full image
-  </p>
-</div>
+{% include figure.html src="/wp-content/uploads/2012/11/pattrn-7.png"
+caption="Pattrn on 7-inch tablets." %}
 
 For example, in [Pattrn](http://pattrnapp.com), the UI for 7-inch devices
 blends the flat list of patterns from phones with the sidebar from 10-inch
@@ -51,12 +44,8 @@ two-column grid, which is more like the 10-inch tablet UI. Also, on 7-inch
 tablets, the search entry is iconified by default in portrait and expanded by
 default in landscape to maintain visual balance in each orientation.
 
-<div id="attachment_3174" style="width: 510px" class="wp-caption aligncenter">
-  <a href="http://lucasr.org/wp-content/uploads/2012/11/firefox-7.png"><img class="size-full wp-image-3174 " style="border: 0px none;" src="http://lucasr.org/wp-content/uploads/2012/11/firefox-7-thumb.png" width="500" height="199" srcset="http://lucasr.org/wp-content/uploads/2012/11/firefox-7-thumb-300x119.png 300w, http://lucasr.org/wp-content/uploads/2012/11/firefox-7-thumb.png 500w" sizes="(max-width: 500px) 100vw, 500px" /></a>
-  <p class="wp-caption-text">
-    Click to see full image
-  </p>
-</div>
+{% include figure.html src="/wp-content/uploads/2012/11/firefox-7.png"
+caption="Firefox on 7-inch tablets." %}
 
 [Firefox for Android](http://www.mozilla.org/firefox/mobile/) is another
 example of this blend. Firefox's UI for 7-inch devices adopts the more powerful

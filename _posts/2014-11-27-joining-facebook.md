@@ -1,10 +1,7 @@
 ---
-id: 4063
 title: Joining Facebook
 date: 2014-11-27T11:24:04+00:00
-author: Lucas Rocha
 layout: post
-guid: http://lucasr.org/?p=4063
 permalink: /2014/11/27/joining-facebook/
 image: /wp-content/uploads/2014/11/facebook.png
 categories:

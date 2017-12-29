@@ -1,10 +1,7 @@
 ---
-id: 2956
 title: Infinite patterns in Pattrn
 date: 2012-06-25T13:21:15+00:00
-author: Lucas Rocha
 layout: post
-guid: http://lucasr.org/?p=2956
 permalink: /2012/06/25/infinite-patterns-in-pattrn/
 image: /wp-content/uploads/2012/06/infinite-scrolling.png
 categories:

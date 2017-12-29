@@ -1,10 +1,7 @@
 ---
-id: 3200
 title: Humanufaturas
 date: 2012-12-05T14:13:26+00:00
-author: Lucas Rocha
 layout: post
-guid: http://lucasr.org/?p=3200
 permalink: /2012/12/05/humanufaturas/
 image: /wp-content/uploads/2012/12/humanufaturas.jpg
 categories:

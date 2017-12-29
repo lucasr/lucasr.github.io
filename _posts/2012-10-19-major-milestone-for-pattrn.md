@@ -1,10 +1,7 @@
 ---
-id: 3122
 title: Major Milestone for Pattrn
 date: 2012-10-19T21:04:49+00:00
-author: Lucas Rocha
 layout: post
-guid: http://lucasr.org/?p=3122
 permalink: /2012/10/19/major-milestone-for-pattrn/
 image: /wp-content/uploads/2012/10/milestone-pattrn.jpg
 categories:

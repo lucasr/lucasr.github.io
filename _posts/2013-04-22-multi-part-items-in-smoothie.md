@@ -1,10 +1,7 @@
 ---
-id: 3628
 title: Multi-part items in Smoothie
 date: 2013-04-22T11:51:24+00:00
-author: Lucas Rocha
 layout: post
-guid: http://lucasr.org/?p=3628
 permalink: /2013/04/22/multi-part-items-in-smoothie/
 image: /wp-content/uploads/2013/04/multipart.png
 categories:

@@ -1,10 +1,7 @@
 ---
-id: 2966
 title: New Firefox for Android released!
 date: 2012-06-26T15:25:10+00:00
-author: Lucas Rocha
 layout: post
-guid: http://lucasr.org/?p=2966
 permalink: /2012/06/26/new-firefox-for-android-released/
 image: /wp-content/uploads/2012/06/new-firefox-for-android.png
 categories:

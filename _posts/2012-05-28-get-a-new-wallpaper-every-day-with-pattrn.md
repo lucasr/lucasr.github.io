@@ -1,10 +1,7 @@
 ---
-id: 2869
 title: Get a new wallpaper every day with Pattrn
 date: 2012-05-28T12:43:11+00:00
-author: Lucas Rocha
 layout: post
-guid: http://lucasr.org/?p=2869
 permalink: /2012/05/28/get-a-new-wallpaper-every-day-with-pattrn/
 categories:
   - Android
@@ -26,8 +23,6 @@ tags:
   - user feedback
   - wallpaper
 ---
-[<img class="alignnone size-full wp-image-2870" title="" src="http://lucasr.org/wp-content/uploads/2012/05/auto-wallpaper-blog.png" width="500" height="318" />](https://play.google.com/store/apps/details?id=org.lucasr.pattrn)
-
 Things are going pretty well for
 [Pattrn](https://play.google.com/store/apps/details?id=org.lucasr.pattrn). In
 just 22 days, it has got almost 600 downloads, got featured in two Android app
@@ -43,6 +38,9 @@ automatic wallpaper updates. You can now tell Pattrn to automatically set your
 Android's wallpaper every day or every week with your favourite or most popular
 patterns. Feeling adventurous? You can also set Pattrn to use a completely
 random pattern as your wallpaper.
+
+{% include figure.html src="/wp-content/uploads/2012/05/auto-wallpaper-blog.png"
+caption="Automatic wallpapers in Pattrn." %}
 
 Once you update Pattrn on your device and run it for the first time, you'll be
 prompted to setup the automatic wallpaper updates. Don't worry, you can change

@@ -1,10 +1,7 @@
 ---
-id: 2849
 title: Native Firefox for Android Beta
 date: 2012-05-21T16:50:27+00:00
-author: Lucas Rocha
 layout: post
-guid: http://lucasr.org/?p=2849
 permalink: /2012/05/21/native-firefox-for-android-beta/
 categories:
   - Android
@@ -33,8 +30,6 @@ tags:
   - sync
   - zooming
 ---
-[<img class="alignnone size-full wp-image-2850" title="" src="http://lucasr.org/wp-content/uploads/2012/05/ff-beta.png" width="500" height="309" srcset="http://lucasr.org/wp-content/uploads/2012/05/ff-beta-300x185.png 300w, http://lucasr.org/wp-content/uploads/2012/05/ff-beta.png 500w" sizes="(max-width: 500px) 100vw, 500px" />](https://play.google.com/store/apps/details?id=org.mozilla.firefox_beta)
-
 At this point, you have probably heard the
 [news](http://blog.mozilla.org/futurereleases/2012/05/15/new-firefox-for-android-beta-is-ready-for-testing/).
 Yes, we've release the first public Beta of Firefox for Android with all the
@@ -42,7 +37,7 @@ goodness that we've been working on in the last 7 months: the brand new native
 UI that is lighter, faster, and sleeker. Here are some big picture highlights
 about this Beta.
 
-## Design direction
+### Design direction
 
 The new native UI design is part of a wider effort in Mozilla to streamline the
 visual identity of Firefox across multiple platforms—desktop and mobile.
@@ -57,7 +52,7 @@ UI](http://www.flickr.com/photos/61892693@N03/sets/72157629634831895/) that
 will eventually trickle down to the [phone
 UI](http://www.flickr.com/photos/61892693@N03/sets/72157629270239482/) as well.
 
-## Panning and zooming
+### Panning and zooming
 
 If you're using the Beta already (or have been using the Nightly or Aurora
 builds) you'll notice how smoother panning and zooming are. This is
@@ -71,7 +66,7 @@ blog posts for further details. It's worth mentioning that the Mobile Platform
 and Graphics teams did an amazing work to implement all this in a rather short
 period!
 
-## Places and Sync
+### Places and Sync
 
 The [Places](https://wiki.mozilla.org/Places) database has been re-implemented
 in Firefox for Android as a private [Content

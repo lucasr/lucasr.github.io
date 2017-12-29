@@ -1,10 +1,7 @@
 ---
-id: 4056
 title: Leaving Mozilla
 date: 2014-11-26T16:57:50+00:00
-author: Lucas Rocha
 layout: post
-guid: http://lucasr.org/?p=4056
 permalink: /2014/11/26/leaving-mozilla/
 image: /wp-content/uploads/2014/11/mozilla.png
 categories:

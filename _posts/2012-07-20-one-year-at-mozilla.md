@@ -1,10 +1,7 @@
 ---
-id: 3009
 title: One Year at Mozilla
 date: 2012-07-20T11:14:09+00:00
-author: Lucas Rocha
 layout: post
-guid: http://lucasr.org/?p=3009
 permalink: /2012/07/20/one-year-at-mozilla/
 image: /wp-content/uploads/2012/07/one-year-mozilla.jpg
 categories:

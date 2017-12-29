@@ -1,10 +1,7 @@
 ---
-id: 3463
 title: Firefox for Android Talk in London
 date: 2013-02-15T17:13:13+00:00
-author: Lucas Rocha
 layout: post
-guid: http://lucasr.org/?p=3463
 permalink: /2013/02/15/firefox-for-android-talk-in-london/
 image: /wp-content/uploads/2013/02/firefox-talk.png
 categories:

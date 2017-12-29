@@ -1,10 +1,7 @@
 ---
-id: 4040
 title: Probing with Gradle
 date: 2014-10-07T23:12:03+00:00
-author: Lucas Rocha
 layout: post
-guid: http://lucasr.org/?p=4040
 permalink: /2014/10/07/probing-with-gradle/
 image: /wp-content/uploads/2014/10/probe-gradle.png
 categories:

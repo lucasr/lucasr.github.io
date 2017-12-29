@@ -1,10 +1,7 @@
 ---
-id: 3854
 title: '"Mozilla on Android" talks in London'
 date: 2013-10-14T13:20:09+00:00
-author: Lucas Rocha
 layout: post
-guid: http://lucasr.org/?p=3854
 permalink: /2013/10/14/mozilla-on-android-talks-in-london/
 image: /wp-content/uploads/2013/10/mozilla-on-android.png
 categories:

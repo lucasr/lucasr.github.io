@@ -1,10 +1,7 @@
 ---
-id: 3094
 title: Smoother Firefox for Android
 date: 2012-10-16T16:50:43+00:00
-author: Lucas Rocha
 layout: post
-guid: http://lucasr.org/?p=3094
 permalink: /2012/10/16/smoother-firefox-for-android/
 image: /wp-content/uploads/2012/10/smoother-fennec.jpg
 categories:

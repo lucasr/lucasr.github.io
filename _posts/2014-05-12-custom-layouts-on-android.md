@@ -1,10 +1,7 @@
 ---
-id: 3920
 title: Custom Layouts on Android
 date: 2014-05-12T12:42:06+00:00
-author: Lucas Rocha
 layout: post
-guid: http://lucasr.org/?p=3920
 permalink: /2014/05/12/custom-layouts-on-android/
 image: /wp-content/uploads/2014/05/layouts-post.png
 categories:
@@ -48,7 +45,7 @@ simplified version of Twitter app's stream—no interactions, just the layouts.
 
 Ok, let's start with the most common type of custom layout: _composite view_.
 
-## Composite View
+### Composite View
 
 This is usually your starting point. _Composite views_ (also known as compound
 views) are the easiest way of combining multiple views into a reusable
@@ -66,7 +63,7 @@ into it, and exposes an _update()_ method to refresh its state in the
 adapter[<sup>code</sup>](https://github.com/lucasr/android-layout-samples/blob/master/src/main/java/org/lucasr/layoutsamples/adapter/TweetsAdapter.java#L85).
 Simple stuff.
 
-## Custom Composite View
+### Custom Composite View
 
 _TweetCompositeView_ will likely perform fairly well in most situations. But,
 for sake of argument, suppose you want to reduce the
@@ -105,7 +102,7 @@ correctly but it doesn't have to. It is absolutely fine to optimize custom
 layouts for your specific needs. This allows you to write both simpler and more
 efficient layout code for your app.
 
-## Flat Custom View
+### Flat Custom View
 
 As you can see, custom composite views are fairly simple to write using
 _ViewGroup_ APIs. Most of the time, they will give you the performance your app
@@ -117,18 +114,14 @@ etc. What about merging all _TweetLayoutView_ child views into a single custom
 view to rule them all? That is what _flat custom views_ are about—see image
 below.
 
-<div id="attachment_3936" style="width: 1290px" class="wp-caption alignnone">
-  <a href="http://lucasr.org/wp-content/uploads/2014/05/layouts.png"><img class="wp-image-3936 size-full" src="http://lucasr.org/wp-content/uploads/2014/05/layouts.png" alt="Custom Composite View (left) and Flat Custom View (right)" width="1280" height="439" srcset="http://lucasr.org/wp-content/uploads/2014/05/layouts-960x329.png 960w, http://lucasr.org/wp-content/uploads/2014/05/layouts-768x263.png 768w, http://lucasr.org/wp-content/uploads/2014/05/layouts-480x164.png 480w, http://lucasr.org/wp-content/uploads/2014/05/layouts.png 1280w" sizes="(max-width: 1280px) 100vw, 1280px" /></a>
-  <p class="wp-caption-text">
-    Custom Composite View (left) and Flat Custom View (right)
-  </p>
-</div>
+{% include figure.html src="/wp-content/uploads/2014/05/layouts.png"
+caption="Custom Composite View (left) and Flat Custom View (right)" %}
 
 A flat custom view is a fully custom view that measures, arranges, and draws
 its inner elements. So you will be subclassing _View_ instead of _ViewGroup_.
 
-If you are looking for real-world examples, enable the &#8220;show layout
-bounds&#8221; developer option in your device and have a look at apps like
+If you are looking for real-world examples, enable the "show layout
+bounds" developer option in your device and have a look at apps like
 Twitter, GMail, and Pocket. They all use flat custom views in their listing
 UIs.
 
@@ -183,7 +176,7 @@ _TweetLayoutView_'s. It handles Picasso requests
 differently[<sup>code</sup>](https://github.com/lucasr/android-layout-samples/blob/master/src/main/java/org/lucasr/layoutsamples/widget/ImageElementTarget.java)
 because it doesn't use _ImageViews_.
 
-## Async Custom View
+### Async Custom View
 
 As we all know, the Android UI framework is
 [single-threaded](http://developer.android.com/guide/components/processes-and-threads.html#Threads).
@@ -195,7 +188,7 @@ for example, that you can't do layout traversals off main thread at
 all—something that would be useful in very complex and dynamic UIs.
 
 For example, if your app has complex items in a _ListView_ (like most social
-        apps do), you will probably end up skipping frames while scrolling
+apps do), you will probably end up skipping frames while scrolling
 because _ListView_ has to
 measure[<sup>code</sup>](https://github.com/android/platform_frameworks_base/blob/kitkat-release/core/java/android/widget/ListView.java#L1870)
 and
@@ -203,22 +196,56 @@ layout[<sup>code</sup>](https://github.com/android/platform_frameworks_base/blob
 each child view to account for their new content as they become visible. The
 same issue applies to _GridViews_, _ViewPagers_, and the like.
 
-Wouldn't it be nice if we could do a layout traversal on the child views that are not visible yet without blocking the main thread? This way, the _measure()_ and _layout()_ calls on child views would take no time when needed in the UI thread.
+Wouldn't it be nice if we could do a layout traversal on the child views that
+are not visible yet without blocking the main thread? This way, the _measure()_
+and _layout()_ calls on child views would take no time when needed in the UI
+thread.
 
-Enter _async custom view_, an experiment to allow layout passes to happen off main thread. This is inspired by the [async node framework](https://www.youtube.com/watch?v=TCuVxU07NWs&feature=youtu.be&t=33m43s) developed by the Paper team at Facebook.
+Enter _async custom view_, an experiment to allow layout passes to happen off
+main thread. This is inspired by the [async node
+framework](https://www.youtube.com/watch?v=TCuVxU07NWs&feature=youtu.be&t=33m43s)
+developed by the Paper team at Facebook.
 
-Given that we can never ever touch the UI toolkit off main thread, we need an API that is able to measure/layout the contents of a view without being directly coupled to it. This is exactly what the _UIElement_ framework provides us.
+Given that we can never ever touch the UI toolkit off main thread, we need an
+API that is able to measure/layout the contents of a view without being
+directly coupled to it. This is exactly what the _UIElement_ framework provides
+us.
 
-_AsyncTweetView_[<sup>code</sup>](https://github.com/lucasr/android-layout-samples/blob/master/src/main/java/org/lucasr/layoutsamples/async/AsyncTweetView.java) is an async custom view. It uses a thread-safe _AsyncTweetElement_[<sup>code</sup>](https://github.com/lucasr/android-layout-samples/blob/master/src/main/java/org/lucasr/layoutsamples/async/AsyncTweetElement.java) factory[<sup>code</sup>](https://github.com/lucasr/android-layout-samples/blob/master/src/main/java/org/lucasr/layoutsamples/async/AsyncTweetElementFactory.java) to define its contents. Off-screen _AsyncTweetElement_ instances are created, pre-measured, and cached in memory from a background thread using a [Smoothie](https://github.com/lucasr/smoothie) item loader[<sup>code</sup>](https://github.com/lucasr/android-layout-samples/blob/master/src/main/java/org/lucasr/layoutsamples/async/TweetsLayoutLoader.java).
+_AsyncTweetView_[<sup>code</sup>](https://github.com/lucasr/android-layout-samples/blob/master/src/main/java/org/lucasr/layoutsamples/async/AsyncTweetView.java)
+is an async custom view. It uses a
+thread-safe _AsyncTweetElement_[<sup>code</sup>](https://github.com/lucasr/android-layout-samples/blob/master/src/main/java/org/lucasr/layoutsamples/async/AsyncTweetElement.java)
+factory[<sup>code</sup>](https://github.com/lucasr/android-layout-samples/blob/master/src/main/java/org/lucasr/layoutsamples/async/AsyncTweetElementFactory.java)
+to define its contents. Off-screen _AsyncTweetElement_ instances are created,
+pre-measured, and cached in memory from a background thread using a
+[Smoothie](https://github.com/lucasr/smoothie) item
+loader[<sup>code</sup>](https://github.com/lucasr/android-layout-samples/blob/master/src/main/java/org/lucasr/layoutsamples/async/TweetsLayoutLoader.java).
 
-I had to compromise the async behaviour a bit because there's no sane way of showing layout placeholders on list items with arbitrary heights i.e. you end up resizing them once the layout gets delivered asynchronously. So whenever an _AsyncTweetView_ is about to be displayed and it doesn't find a matching _AsyncTweetElement_ in memory, it will force its creation in the UI thread[<sup>code</sup>](https://github.com/lucasr/android-layout-samples/blob/master/src/main/java/org/lucasr/layoutsamples/async/AsyncTweetView.java#L46).
+I had to compromise the async behaviour a bit because there's no sane way of
+showing layout placeholders on list items with arbitrary heights i.e. you end
+up resizing them once the layout gets delivered asynchronously. So whenever an
+_AsyncTweetView_ is about to be displayed and it doesn't find a matching
+_AsyncTweetElement_ in memory, it will force its creation in the UI
+thread[<sup>code</sup>](https://github.com/lucasr/android-layout-samples/blob/master/src/main/java/org/lucasr/layoutsamples/async/AsyncTweetView.java#L46).
 
-Furthermore, both the preloading logic and the memory cache expiration would need to be a lot smarter to ensure more layout cache hits in the UI thread. For instance, using a LRU cache[<sup>code</sup>](https://github.com/lucasr/android-layout-samples/blob/master/src/main/java/org/lucasr/layoutsamples/async/UIElementCache.java) here doesn't seem ideal.
+Furthermore, both the preloading logic and the memory cache expiration would
+need to be a lot smarter to ensure more layout cache hits in the UI thread. For
+instance, using a LRU
+cache[<sup>code</sup>](https://github.com/lucasr/android-layout-samples/blob/master/src/main/java/org/lucasr/layoutsamples/async/UIElementCache.java)
+here doesn't seem ideal.
 
-Despite these limitations, the preliminary results from async custom views look very promising. I'll continue the explorations in this area by refining the _UIElement_ framework and using it in other kinds of UIs. Let's see where it goes.
+Despite these limitations, the preliminary results from async custom views look
+very promising. I'll continue the explorations in this area by refining the
+_UIElement_ framework and using it in other kinds of UIs. Let's see where it
+goes.
 
-**Wrapping up**
+### Wrapping up
 
-When it comes to layouts, the more custom you go, the less you'll be able to lean on the platform's proven components. So avoid premature optimization and only go fully custom on areas that will actually affect the perceived quality and performance of your app.
+When it comes to layouts, the more custom you go, the less you'll be able to
+lean on the platform's proven components. So avoid premature optimization and
+only go fully custom on areas that will actually affect the perceived quality
+and performance of your app.
 
-This is not a black-and-white decision though. Between stock widgets and fully custom views there's a wide spectrum of solutions—from simple composite views to the more complex async views. In practice, you'll usually end up combining more than one of the techniques demonstrated here.
+This is not a black-and-white decision though. Between stock widgets and fully
+custom views there's a wide spectrum of solutions—from simple composite views
+to the more complex async views. In practice, you'll usually end up combining
+more than one of the techniques demonstrated here.

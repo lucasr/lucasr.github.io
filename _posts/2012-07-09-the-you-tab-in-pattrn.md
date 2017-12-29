@@ -1,10 +1,7 @@
 ---
-id: 2987
 title: The You tab in Pattrn
 date: 2012-07-09T20:49:14+00:00
-author: Lucas Rocha
 layout: post
-guid: http://lucasr.org/?p=2987
 permalink: /2012/07/09/the-you-tab-in-pattrn/
 image: /wp-content/uploads/2012/07/youtab.png
 categories:

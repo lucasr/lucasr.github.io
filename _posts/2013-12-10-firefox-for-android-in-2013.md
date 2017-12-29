@@ -1,10 +1,7 @@
 ---
-id: 3867
 title: Firefox for Android in 2013
 date: 2013-12-10T17:15:43+00:00
-author: Lucas Rocha
 layout: post
-guid: http://lucasr.org/?p=3867
 permalink: /2013/12/10/firefox-for-android-in-2013/
 image: /wp-content/uploads/2013/12/firefox2013.png
 categories:
@@ -57,7 +54,7 @@ sometimes hard to see how all the releases add up. If you haven't tried Firefox
 for Android yet, here is my personal list of things that I believe sets it
 apart from the crowd.
 
-## All your stuff, one tap
+### All your stuff, one tap
 
 The new Home in Firefox for Android 26 gives you instant access to all your
 data (history, bookmarks, reading list, top sites) through a fluid set of
@@ -69,14 +66,11 @@ extra help, we also show search suggestions from your default search engine as
 well as auto-completing domains you've visited before. You'll usually find what
 you're looking for by just typing a couple of letters.
 
-<div id="attachment_3872" style="width: 1273px" class="wp-caption alignnone">
-  <a href="http://lucasr.org/wp-content/uploads/2013/12/home.png"><img class="size-full wp-image-3872 " style="border: 0px;" alt="Top Sites, History, and Search." src="http://lucasr.org/wp-content/uploads/2013/12/home.png" width="1263" height="653" srcset="http://lucasr.org/wp-content/uploads/2013/12/home-773x400.png 773w, http://lucasr.org/wp-content/uploads/2013/12/home-618x320.png 618w, http://lucasr.org/wp-content/uploads/2013/12/home-386x200.png 386w, http://lucasr.org/wp-content/uploads/2013/12/home.png 1263w" sizes="(max-width: 1263px) 100vw, 1263px" /></a>
-  <p class="wp-caption-text">
-    Top Sites, History, and Search.
-  </p>
-</div>
 
-## Great for reading
+{% include figure.html src="/wp-content/uploads/2013/12/home.png"
+caption="Top Sites, History, and Search." %}
+
+### Great for reading
 
 Firefox for Android does a couple of special things for readers. Every time you
 access a page with long-form content—such as a news article or an essay—we
@@ -88,12 +82,8 @@ color scheme for comfortable reading. This is especially useful on mobile
 browsers as there are still many websites that don't provide a mobile-friendly
 layout.
 
-<div id="attachment_3869" style="width: 1290px" class="wp-caption alignnone">
-  <a href="http://lucasr.org/wp-content/uploads/2013/12/reader.png"><img class="size-full wp-image-3869 " style="border: 0px;" alt="Reader Mode in Firefox for Android" src="http://lucasr.org/wp-content/uploads/2013/12/reader.png" width="1280" height="717" srcset="http://lucasr.org/wp-content/uploads/2013/12/reader-714x400.png 714w, http://lucasr.org/wp-content/uploads/2013/12/reader-571x320.png 571w, http://lucasr.org/wp-content/uploads/2013/12/reader-357x200.png 357w, http://lucasr.org/wp-content/uploads/2013/12/reader.png 1280w" sizes="(max-width: 1280px) 100vw, 1280px" /></a>
-  <p class="wp-caption-text">
-    Reader Mode in Firefox for Android
-  </p>
-</div>
+{% include figure.html src="/wp-content/uploads/2013/12/reader.png"
+caption="Reader Mode in Firefox for Android." %}
 
 Secondly, we bundle nice default fonts for web content. This makes a subtle yet
 noticeable difference on a lot of websites.
@@ -103,7 +93,7 @@ by adding pages to Firefox's reading list or by using our [quickshare
 feature](https://blog.mozilla.org/blog/2013/09/17/its-easier-to-share-your-favorite-web-content-with-firefox-for-android/)
 to save it to your favourite app, such as Pocket or Evernote.
 
-## Make it yours
+### Make it yours
 
 Add-ons are big in desktop Firefox. And we want Firefox for Android to be no
 different. We provide several [JavaScript
@@ -117,14 +107,10 @@ If you're into blingy UIs, you can install some [lightweight
 themes](https://addons.mozilla.org/en-US/android/themes/). Furthermore, you can
 install and use any web search engine of your choice.
 
-<div id="attachment_3888" style="width: 1279px" class="wp-caption alignnone">
-  <a href="http://lucasr.org/wp-content/uploads/2013/12/makeityours.png"><img class="size-full wp-image-3888 " style="border: 0px;" alt="Lightweight theme, Add-ons, and Search Engines" src="http://lucasr.org/wp-content/uploads/2013/12/makeityours.png" width="1269" height="654" srcset="http://lucasr.org/wp-content/uploads/2013/12/makeityours-776x400.png 776w, http://lucasr.org/wp-content/uploads/2013/12/makeityours-620x320.png 620w, http://lucasr.org/wp-content/uploads/2013/12/makeityours-388x200.png 388w, http://lucasr.org/wp-content/uploads/2013/12/makeityours.png 1269w" sizes="(max-width: 1269px) 100vw, 1269px" /></a>
-  <p class="wp-caption-text">
-    Lightweight theme, Add-ons, and Search Engines
-  </p>
-</div>
+{% include figure.html src="/wp-content/uploads/2013/12/makeityours.png"
+caption="Lightweight theme, Add-ons, and Search Engines." %}
 
-## Smooth panning and zooming
+### Smooth panning and zooming
 
 An all-new panning and zooming framework was built as part of the big native
 rewrite last year. The main focus areas were performance and reliability. The
@@ -137,7 +123,7 @@ all) platforms soon.
 From a user perspective, this means you get consistently smooth panning and
 zooming in Firefox for Android.
 
-## Fast-paced development
+### Fast-paced development
 
 We develop Firefox for Android through a series of fast-paced 6-week
 [development
@@ -146,7 +132,7 @@ cycle, we try to keep a balance between general housekeeping (bug fixes and
 polishing) and new features. This means you get a better browser every
 6 weeks.
 
-## Open and transparent
+### Open and transparent
 
 Firefox for Android is the only _truly_ open-source mobile browser. There, I
 said it. We're a community of paid staff and volunteers. We're always mentoring

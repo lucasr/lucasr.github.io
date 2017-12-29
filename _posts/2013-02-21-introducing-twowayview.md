@@ -1,10 +1,7 @@
 ---
-id: 3474
 title: Introducing TwoWayView
 date: 2013-02-21T14:47:33+00:00
-author: Lucas Rocha
 layout: post
-guid: http://lucasr.org/?p=3474
 permalink: /2013/02/21/introducing-twowayview/
 image: /wp-content/uploads/2013/02/twowayview.png
 categories:
@@ -34,7 +31,7 @@ Android. The new UI includes a horizontal scrolling tabs tray to make better
 use of the screen real estate on phones and tablets in different orientations.
 
 Unfortunately, the Android platform doesn't provide any
-[_AdapterView_](http://developer.android.com/reference/android/widget/AdapterView.html)
+[AdapterView](http://developer.android.com/reference/android/widget/AdapterView.html)
 with horizontal scrolling support nor could I find any non-naive open source
 implementation out there.  Enter
 [TwoWayView](https://github.com/lucasr/twoway-view).

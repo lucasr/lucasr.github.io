@@ -1,10 +1,7 @@
 ---
-id: 2889
 title: Discover patterns by color in Pattrn
 date: 2012-06-04T15:42:43+00:00
-author: Lucas Rocha
 layout: post
-guid: http://lucasr.org/?p=2889
 permalink: /2012/06/04/discover-patterns-by-color-in-pattrn/
 image: /wp-content/uploads/2012/06/search-by-color-pattrn.png
 categories:

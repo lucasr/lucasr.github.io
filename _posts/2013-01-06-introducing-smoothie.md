@@ -1,10 +1,7 @@
 ---
-id: 3236
 title: Introducing Smoothie
 date: 2013-01-06T23:48:43+00:00
-author: Lucas Rocha
 layout: post
-guid: http://lucasr.org/?p=3236
 permalink: /2013/01/06/introducing-smoothie/
 image: /wp-content/uploads/2013/01/smoothie.png
 categories:
@@ -37,7 +34,7 @@ ensure that the scrolling experience is as smooth as possible. In the past few
 weeks, I've been working on factoring out this code into a tiny library called
 [Smoothie](https://github.com/lucasr/smoothie).
 
-Smoothie provides a simple API to load _ListView_/_GridView_ items
+Smoothie provides a simple API to load ListView/GridView items
 asynchronously, off the UI thread. It does all the obvious things you'd
 expect—loading items as they become visible, cancelling item requests for
 recycled views, etc. But it does a bit more than that.
@@ -45,32 +42,33 @@ recycled views, etc. But it does a bit more than that.
 Smoothie is gesture-aware: it will avoid wasting item requests after a fling
 gesture and enable incremental item loading while you scroll the list with
 finger down. Furthermore, it supports offscreen item preloading to reduce the
-number of placeholder-type items as you scroll. Under the hood, Smoothie uses a
-thread pool executor backed by blocking queue with dynamic priorities.
-Offscreen item requests will dynamically get higher priority as they become
-visible on screen while scrolling.
+number of placeholder-type items as you scroll.
+
+Under the hood, Smoothie uses a thread pool executor backed by blocking queue
+with dynamic priorities.  Offscreen item requests will dynamically get higher
+priority as they become visible on screen while scrolling.
 
 So, how do you use it? It's easy:
 
   1. Add an
-     _[AsyncListView](https://github.com/lucasr/smoothie/blob/master/library/src/org/lucasr/smoothie/AsyncListView.java)_
-     or _[AsyncGridView](https://github.com/lucasr/smoothie/blob/master/library/src/org/lucasr/smoothie/AsyncGridView.java)_
+     [AsyncListView](https://github.com/lucasr/smoothie/blob/master/library/src/org/lucasr/smoothie/AsyncListView.java)
+     or [AsyncGridView](https://github.com/lucasr/smoothie/blob/master/library/src/org/lucasr/smoothie/AsyncGridView.java)
      to your layout. They only add one extra setter method to their respective
      parent classes.
   2. Implement an
-     _[ItemLoader](https://github.com/lucasr/smoothie/blob/master/library/src/org/lucasr/smoothie/ItemLoader.java)_
+     [ItemLoader](https://github.com/lucasr/smoothie/blob/master/library/src/org/lucasr/smoothie/ItemLoader.java)
      with your app-specific logic for loading and displaying items. You'll have
      to override four methods: _getItemParams()_, _loadItem()_,
      _loadItemFromMemory()_, and _displayItem()_.
   3. Build an
-     _[ItemManager](https://github.com/lucasr/smoothie/blob/master/library/src/org/lucasr/smoothie/ItemManager.java)_
+     [ItemManager](https://github.com/lucasr/smoothie/blob/master/library/src/org/lucasr/smoothie/ItemManager.java)
      with your _ItemLoader_ and set it on the target _AsyncListView_ or
      _AsyncGridView_.
 
-Think of Smoothie as a slim backbone for your _ListView_/_GridView_'s
+Think of Smoothie as a slim backbone for your ListView/GridView's
 asynchronous loading. You can easily hook up your own image loading/caching
 framework in it. For instance, one of the sample apps implements an
-[_ItemLoader_](https://github.com/lucasr/smoothie/blob/master/samples/bitmap-cache/src/org/lucasr/smoothie/samples/bitmapcache/PatternsListLoader.java)
+[ItemLoader](https://github.com/lucasr/smoothie/blob/master/samples/bitmap-cache/src/org/lucasr/smoothie/samples/bitmapcache/PatternsListLoader.java)
 backed by
 [Android-BitmapCache](https://github.com/chrisbanes/Android-BitmapCache) with a
 simple fade-in animation to display images.

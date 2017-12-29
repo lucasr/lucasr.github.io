@@ -1,10 +1,7 @@
 ---
-id: 3135
 title: Snappier Awesome Screen and Start Page
 date: 2012-11-05T17:25:02+00:00
-author: Lucas Rocha
 layout: post
-guid: http://lucasr.org/?p=3135
 permalink: /2012/11/05/snappier-awesome-screen-and-start-page/
 image: /wp-content/uploads/2012/11/snappier.jpg
 categories:

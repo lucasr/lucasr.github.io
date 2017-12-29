@@ -1,10 +1,7 @@
 ---
-id: 2678
 title: Remote Debugging in Firefox Mobile
 date: 2012-03-28T15:43:27+00:00
-author: Lucas Rocha
 layout: post
-guid: http://lucasr.org/?p=2678
 permalink: /2012/03/28/remote-debugging-in-firefox-mobile/
 image: /wp-content/uploads/2012/03/debugger1.png
 categories:
@@ -43,7 +40,9 @@ protocol](https://wiki.mozilla.org/Remote_Debugging_Protocol) to send commands
 to Fennec via network. You have to connect your Android device to your computer
 via USB and map a _localhost_ port using the follow _adb_ command:
 
-`adb forward tcp:6000 tcp:6000`
+```
+adb forward tcp:6000 tcp:6000
+```
 
 This will map port 6000 on your computer with the same TCP port on your mobile
 device. There's no UI in the script debugger to connect to a remote Firefox

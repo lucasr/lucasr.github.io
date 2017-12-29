@@ -1,10 +1,7 @@
 ---
-id: 3280
 title: 'Featured bug #2 in Firefox for Android'
 date: 2013-01-23T21:34:34+00:00
-author: Lucas Rocha
 layout: post
-guid: http://lucasr.org/?p=3280
 permalink: /2013/01/23/featured-bug-2-in-firefox-for-android-2/
 image: /wp-content/uploads/2013/01/bug2.png
 categories:

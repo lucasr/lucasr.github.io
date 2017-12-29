@@ -1,10 +1,7 @@
 ---
-id: 2801
 title: Mozilla, Mobile and Students
 date: 2012-04-19T11:12:55+00:00
-author: Lucas Rocha
 layout: post
-guid: http://lucasr.org/?p=2801
 permalink: /2012/04/19/mozilla-mobile-and-students/
 image: /wp-content/uploads/2012/04/students-mozilla.jpg
 categories:

@@ -1,10 +1,7 @@
 ---
-id: 3069
 title: Reader Mode in Firefox Beta for Android
 date: 2012-09-03T10:55:56+00:00
-author: Lucas Rocha
 layout: post
-guid: http://lucasr.org/?p=3069
 permalink: /2012/09/03/reader-mode-in-firefox-beta-for-android/
 categories:
   - Android
@@ -29,19 +26,15 @@ tags:
   - release
   - Software
 ---
-<div id="attachment_3076" style="width: 510px" class="wp-caption alignnone">
-  <a href="http://lucasr.org/wp-content/uploads/2012/09/reader-full.png"><img class="size-full wp-image-3076" title="" src="http://lucasr.org/wp-content/uploads/2012/09/reader-thumbnail.png" width="500" height="387" srcset="http://lucasr.org/wp-content/uploads/2012/09/reader-thumbnail-300x232.png 300w, http://lucasr.org/wp-content/uploads/2012/09/reader-thumbnail.png 500w" sizes="(max-width: 500px) 100vw, 500px" /></a>
-  <p class="wp-caption-text">
-    Click to see full image
-  </p>
-</div>
-
 Yes, Reader Mode is now available on Firefox Beta for Android! Go read my
 previous [blog
 post](http://lucasr.org/2012/06/21/reader-mode-in-firefox-mobile/) about it for
 an overview of the feature. [Brian](http://thebnich.com/blog/) and I have been
 working hard to get it in shape for the release and things are now much more
 solid.
+
+{% include figure.html src="/wp-content/uploads/2012/09/reader-full.png"
+width="510px" %}
 
 So, what's new since I announced Reader Mode? Besides tons of bug fixes, there
 are two things I'd like to highlight. First, we went through a new design

@@ -1,10 +1,7 @@
 ---
-id: 3982
 title: Introducing dspec
 date: 2014-09-08T13:52:02+00:00
-author: Lucas Rocha
 layout: post
-guid: http://lucasr.org/?p=3982
 permalink: /2014/09/08/introducing-dspec/
 image: /wp-content/uploads/2014/09/dspec.png
 categories:
@@ -43,13 +40,8 @@ files](https://github.com/lucasr/dspec/blob/master/sample/src/main/res/raw/main_
 Specs can define various aspects of the baseline grid, keylines, and spacing
 markers such as visibility, offset, size, color, etc.
 
-<div id="attachment_3992" style="width: 1090px" class="wp-caption alignnone">
-  <a href="http://lucasr.org/wp-content/uploads/2014/09/2014-09-08-13.02.51.png"><img class="size-full img-fluid wp-image-3992" src="http://lucasr.org/wp-content/uploads/2014/09/2014-09-08-13.02.51.png" alt="Baseline grid, keylines, and spacing markers in action." width="1080" height="649" srcset="http://lucasr.org/wp-content/uploads/2014/09/2014-09-08-13.02.51-665x400.png 665w, http://lucasr.org/wp-content/uploads/2014/09/2014-09-08-13.02.51-532x320.png 532w, http://lucasr.org/wp-content/uploads/2014/09/2014-09-08-13.02.51-332x200.png 332w, http://lucasr.org/wp-content/uploads/2014/09/2014-09-08-13.02.51.png 1080w" sizes="(max-width: 1080px) 100vw, 1080px" /></a>
-  
-  <p class="wp-caption-text">
-    Baseline grid, keylines, and spacing markers in action.
-  </p>
-</div>
+{% include figure.html src="/wp-content/uploads/2014/09/2014-09-08-13.02.51.png"
+caption="Baseline grid, keylines, and spacing markers in action." %}
 
 Given the responsive nature of Android UIs, the keylines and spacing markers
 are positioned in relation to predefined reference points (e.g. left, right,

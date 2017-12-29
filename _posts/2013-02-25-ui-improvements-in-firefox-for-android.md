@@ -1,10 +1,7 @@
 ---
-id: 3509
 title: UI improvements in Firefox for Android
 date: 2013-02-25T18:46:52+00:00
-author: Lucas Rocha
 layout: post
-guid: http://lucasr.org/?p=3509
 permalink: /2013/02/25/ui-improvements-in-firefox-for-android/
 image: /wp-content/uploads/2013/02/new-firefox-ui.png
 categories:
@@ -38,7 +35,7 @@ types of tabs; making better use of the screen real estate on different
 form-factors and orientations; and being more compliant with Android's design
 language. So, what's new?
 
-## Tab types
+### Tab types
 
 With the introduction of private browsing support in Firefox 21—now in
 Aurora—came the need for a clear distinction between regular and private tabs.
@@ -49,7 +46,7 @@ tab—regular, private, and remote—so that you always keep things separate and
 organized. Furthermore, once you select a private tab, the main toolbar becomes
 dark as a clear sign that you're in a different browsing mode.
 
-## Two-way tabs tray
+### Two-way tabs tray
 
 We now use a horizontal scrolling tabs tray whenever it improves our use of the
 screen space. This is achieved with a
@@ -61,7 +58,7 @@ landscape mode. On tablets, the tabs tray is a vertical scrolling side bar in
 landscape mode and a horizontal strip in portrait mode. Small tablets (7" or
 so) now share the exact same tabs UI than large tablets.
 
-## Holo-ish
+### Holo-ish
 
 The Firefox UX team has been working on
 [streamlining](http://madhava.com/egotism/archive/005060.html) the Firefox UI

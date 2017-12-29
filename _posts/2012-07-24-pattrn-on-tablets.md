@@ -1,10 +1,7 @@
 ---
-id: 3023
 title: Pattrn on Tablets
 date: 2012-07-24T14:28:04+00:00
-author: Lucas Rocha
 layout: post
-guid: http://lucasr.org/?p=3023
 permalink: /2012/07/24/pattrn-on-tablets/
 image: /wp-content/uploads/2012/07/pattrn-tablets.png
 categories:

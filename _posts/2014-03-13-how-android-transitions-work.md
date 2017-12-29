@@ -1,10 +1,7 @@
 ---
-id: 3902
 title: How Android Transitions Work
 date: 2014-03-13T14:15:26+00:00
-author: Lucas Rocha
 layout: post
-guid: http://lucasr.org/?p=3902
 permalink: /2014/03/13/how-android-transitions-work/
 image: /wp-content/uploads/2014/03/transitions.png
 categories:
@@ -24,10 +21,10 @@ tags:
   - ui
 ---
 
-One of the biggest highlights of the Android KitKat release was the new <a
-href="https://developer.android.com/about/versions/kitkat.html#44-transitions">Transitions
-framework</a> which provides a very convenient API to animate UIs between
-different states.
+One of the biggest highlights of the Android KitKat release was the new
+[Transitions framework](
+https://developer.android.com/about/versions/kitkat.html#44-transitions)
+which provides a very convenient API to animate UIs between different states.
 
 The Transitions framework got me curious about how it orchestrates layout
 rounds and animations between UI states. This post documents my understanding
@@ -35,22 +32,19 @@ of how transitions are implemented in Android after skimming through the source
 code for a bit. I've sprinkled a bunch of source code links throughout the post
 to make it easier to follow.
 
-
 Although this post does contain a few development tips, this is _not_ a
 tutorial on how to use transitions in your apps. If that's what you're looking
-for, I recommend reading Mark Allison's <a
-href="http://blog.stylingandroid.com/archives/category/animation/transition">tutorials</a>
+for, I recommend reading Mark Allison's [tutorials](
+http://blog.stylingandroid.com/archives/category/animation/transition)
 on the topic.
 
 With that said, let's get started.
 
-## The framework
-
+### The framework
 
 Android's Transitions framework is essentially a mechanism for animating
 layout changes e.g. adding, removing, moving, resizing, showing, or hiding
 views.
-
 
 The framework is built around three core entities: _scene root_,
 _scenes_, and _transitions_. A _scene root_ is an
@@ -58,7 +52,6 @@ ordinary _ViewGroup_ that defines the piece of the UI on which the
 transitions will run. A _scene_ is a thin wrapper around a
 _ViewGroup_ representing a specific layout state of the _scene
 root_.
-
 
 Finally, and most importantly, a _transition_ is the component
 responsible for capturing layout differences and generating animators to switch
@@ -75,18 +68,20 @@ _transition_. Step 2 might be either a scene switch or an arbitrary
 layout change.
 **
 
-## How it works
+### How it works
 
 Let's take the simplest possible way of triggering a transition and go through
 what happens under the hood. So, here's a little code sample:
 
-<pre style="font-size: smaller;">TransitionManager.beginDelayedTransition(sceneRoot);
+```java
+TransitionManager.beginDelayedTransition(sceneRoot);
 
 View child = sceneRoot.findViewById(R.id.child);
 LayoutParams params = child.getLayoutParams();
 params.width = 150;
 params.height = 25;
-child.setLayoutParams(params);</pre>
+child.setLayoutParams(params);
+```
 
 This code triggers an _AutoTransition_ on the given _scene root_
 animating _child_ to its new size.
@@ -134,14 +129,12 @@ _ListView_. Just call _beginDelayedTransition()_ before updating
 your adapter and an _AutoTransition_ will do the magic for you—see this
 <a href="https://gist.github.com/lucasr/9508647">gist</a> for a quick sample.
 
-
 The state of each view taking part in a transition is stored in
 _TransitionValues_ instances which are essentially a _Map_ with
 an associated _View_<sup><a
 href="https://github.com/android/platform_frameworks_base/blob/kitkat-release/core/java/android/transition/TransitionValues.java">code</a></sup>.
 This is one part of the API that feels a bit hand wavy.
 Maybe _TransitionValues_ should have been better encapsulated?
-
 
 _<a
 href="http://developer.android.com/reference/android/transition/Transition.html">Transition</a>_
@@ -159,7 +152,6 @@ href="https://github.com/android/platform_frameworks_base/blob/kitkat-release/co
 (as this is not a scene switch), and finally wait for the next rendering
 frame<sup><a
 href="https://github.com/android/platform_frameworks_base/blob/kitkat-release/core/java/android/transition/TransitionManager.java#L210">code</a></sup>.
-
 
 _TransitionManager_ waits for the next rendering frame by adding an <a
 href="http://developer.android.com/reference/android/view/ViewTreeObserver.OnPreDrawListener.html">_OnPreDrawListener_</a>__<sup><a
@@ -192,8 +184,7 @@ href="https://github.com/android/platform_frameworks_base/blob/kitkat-release/co
 in the defined order (together or sequentially) and magic happens on screen.
 **
 
-##  Switching scenes
-
+### Switching scenes
 
 The code path for switching scenes is very similar to
 _beginDelayedTransition()_—the main difference being in how the layout
@@ -218,7 +209,7 @@ state held by the previous scene. For example, if you loaded an image from the
 cloud into an _ImageView_ in the previous scene, you'll have to transfer
 this state to the new scene somehow.
 
-##  Some extras
+###  Some extras
 
 Here are some curious details in how certain transitions are implemented that
 are worth mentioning.
@@ -240,8 +231,7 @@ next rendering frame. _Fade_ temporarily adds the removed views to the
 _scene root_'s overlay to animate them out during the transition<sup><a
 href="https://github.com/android/platform_frameworks_base/blob/kitkat-release/core/java/android/transition/Fade.java#L246">code</a></sup>.
 
-## Wrapping up
-
+### Wrapping up
 
 The overall architecture of the Transitions framework is fairly simple—most of
 the complexity is in the _Transition_ subclasses to handle all types of
@@ -260,4 +250,4 @@ technique—it's just a quick hack, don't use it in production! The same idea
 could be applied to implement transitions in a backwards compatible way for
 pre-KitKat devices, among other things.
 
- That's all for now. I hope you enjoyed it!
+That's all for now. I hope you enjoyed it!

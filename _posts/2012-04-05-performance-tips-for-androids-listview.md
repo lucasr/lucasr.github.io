@@ -1,10 +1,7 @@
 ---
-id: 2672
 title: "Performance Tips for Android's ListView"
 date: 2012-04-05T11:24:21+00:00
-author: Lucas Rocha
 layout: post
-guid: http://lucasr.org/?p=2672
 permalink: /2012/04/05/performance-tips-for-androids-listview/
 categories:
   - Free Software
@@ -42,11 +39,11 @@ useful.
 
 I'm assuming you're already familiar with _ListViews_ and understand the
 framework around
-[_AdapterViews_](http://developer.android.com/reference/android/widget/AdapterView.html).
+[AdapterViews](http://developer.android.com/reference/android/widget/AdapterView.html).
 I've added some Android source code pointers for the curious readers willing to
 understand things a bit deeper.
 
-## How it works
+### How it works
 
 _ListView_ is designed for scalability and performance. In practice, this
 essentially means:
@@ -85,9 +82,8 @@ href="https://github.com/android/platform_frameworks_base/blob/dcce1216b0066f3f9
 The image below visually summarizes what happens when you pan a _ListView_
 down.
 
-<p style="text-align: center;">
-  <img class="size-full wp-image-2725 aligncenter" style="border: 0px none;" src="http://lucasr.org/wp-content/uploads/2012/04/listview1.png" width="537" height="267" srcset="http://lucasr.org/wp-content/uploads/2012/04/listview1-300x149.png 300w, http://lucasr.org/wp-content/uploads/2012/04/listview1.png 537w" sizes="(max-width: 537px) 100vw, 537px" />
-</p>
+{% include figure.html src="/wp-content/uploads/2012/04/listview1.png"
+caption="Recyling in ListView." %}
 
 With this framework in mind, let's move on to the tips. As you've seen above,
 _ListView_ dynamically inflates and recycles tons of views when scrolling
@@ -96,7 +92,7 @@ so it's key to make your adapter's
 as lightweight as possible. All tips resolve around making _getView()_
 faster in one way or another.
 
-## View recycling
+### View recycling
 
 Every time _ListView_ needs to show a new row on screen, it will call the
 _getView()_ method from its adapter. As you know, _getView()_ takes three
@@ -109,7 +105,8 @@ layout. So, when _convertView_ is not null, you should simply update its
 contents instead of inflating a new row layout. The _getView()_ code in your
 adapter would look a bit like:
 
-<pre style="font-size: smaller;">public View getView(int position, View convertView, ViewGroup parent) {
+```java
+public View getView(int position, View convertView, ViewGroup parent) {
     if (convertView == null) {
         convertView = mInflater.inflate(R.layout.your_layout, null);
     }
@@ -118,9 +115,10 @@ adapter would look a bit like:
     text.setText("Position " + position);
 
     return convertView;
-}</pre>
+}
+```
 
-## View Holder pattern
+### View Holder pattern
 
 Finding an inner view inside an inflated layout is among the most common
 operations in Android. This is usually done through a _View_ method called
@@ -142,7 +140,8 @@ in the row's view after inflating it. This way you'll only have to use
 _findViewById()_ when you first create the layout. Here's the previous code
 sample with View Holder pattern applied:
 
-<pre style="font-size: smaller;">public View getView(int position, View convertView, ViewGroup parent) {
+```java
+public View getView(int position, View convertView, ViewGroup parent) {
     ViewHolder holder;
 
     if (convertView == null) {
@@ -163,9 +162,10 @@ sample with View Holder pattern applied:
 
 private static class ViewHolder {
     public TextView text;
-}</pre>
+}
+```
 
-## Async loading
+### Async loading
 
 Very often Android apps show richer content in each _ListView_ row such as
 images. Using [drawable
@@ -182,8 +182,8 @@ means that scrolling your _ListView_ would look anything but smooth.
 
 What you want to do is running all per-row IO or any heavy CPU-bound routine
 asynchronously in a separate thread. The trick here is to do that and still
-comply with _ListView_&#8216;s recycling behaviour. For instance, if you run an
-_[AsyncTask](http://developer.android.com/reference/android/os/AsyncTask.html)_
+comply with _ListView_'s recycling behaviour. For instance, if you run an
+[AsyncTask](http://developer.android.com/reference/android/os/AsyncTask.html)
 to load a profile picture in the adapter's _getView()_, the view you're loading
 the image for might be recycled for another position before the _AsyncTask_
 finishes. So, you need a mechanism to know if the view hasn't been recycled
@@ -195,7 +195,8 @@ target row for the view is still the same when the async operation finishes.
 There are many ways of achieving this. Here is just a simplistic sketch of one
 way you could do it:
 
-<pre style="font-size: smaller;">public View getView(int position, View convertView,
+```java
+public View getView(int position, View convertView,
         ViewGroup parent) {
     ViewHolder holder;
 
@@ -234,9 +235,10 @@ private static class ThumbnailTask extends AsyncTask {
 private static class ViewHolder {
     public ImageView thumbnail;
     public int position;
-}</pre>
+}
+```
 
-## Interaction awareness
+### Interaction awareness
 
 Asynchronously loading heavier assets for each row is an important step to
 towards a performant _ListView_. But if you blindly start an asynchronous
@@ -260,7 +262,7 @@ scrolling among other things. You can also balance interaction awareness with
 an in-memory cache so that you show cached content even while scrolling. You
 got the idea.
 
-## That's all!
+### That's all!
 
 I strongly recommend watching Romain Guy and Adam Powell's
 [talk](http://www.youtube.com/watch?v=wDBM6wVEO70) about _ListView_ as it
@@ -271,7 +273,7 @@ this post but I thought it would be useful to document them all in one place.
 Hopefully, it will be a useful reference for hackers getting started on Android
 development.
 
-**Quick update.** I've just announced
+**Update.** I've just announced
 [Smoothie](http://lucasr.org/2013/01/06/introducing-smoothie/), a tiny library
 that that offers an easy way to do async loading in _ListViews_/_GridViews_. It
 incorporates most of the tips described in this blog post behind a very simple

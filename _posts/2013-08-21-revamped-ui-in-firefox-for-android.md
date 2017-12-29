@@ -1,10 +1,7 @@
 ---
-id: 3842
 title: Revamped UI in Firefox for Android
 date: 2013-08-21T15:42:48+00:00
-author: Lucas Rocha
 layout: post
-guid: http://lucasr.org/?p=3842
 permalink: /2013/08/21/revamped-ui-in-firefox-for-android/
 image: /wp-content/uploads/2013/08/fig.png
 categories:

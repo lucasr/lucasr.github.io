@@ -1,10 +1,7 @@
 ---
-id: 3610
 title: "Firefox for Android's UI polishing Hackathon"
 date: 2013-04-22T09:51:49+00:00
-author: Lucas Rocha
 layout: post
-guid: http://lucasr.org/?p=3610
 permalink: /2013/04/22/firefox-for-androids-ui-polishing-hackathon/
 image: /wp-content/uploads/2013/04/ui-polishing.jpg
 categories:

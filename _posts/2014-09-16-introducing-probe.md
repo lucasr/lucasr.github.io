@@ -1,10 +1,7 @@
 ---
-id: 4000
 title: Introducing Probe
 date: 2014-09-16T10:32:49+00:00
-author: Lucas Rocha
 layout: post
-guid: http://lucasr.org/?p=4000
 permalink: /2014/09/16/introducing-probe/
 image: /wp-content/uploads/2014/09/probe.png
 categories:

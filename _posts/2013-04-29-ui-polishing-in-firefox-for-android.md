@@ -1,10 +1,7 @@
 ---
-id: 3717
 title: UI polishing in Firefox for Android
 date: 2013-04-29T14:15:05+00:00
-author: Lucas Rocha
 layout: post
-guid: http://lucasr.org/?p=3717
 permalink: /2013/04/29/ui-polishing-in-firefox-for-android/
 image: /wp-content/uploads/2013/04/polishing.png
 categories:
@@ -38,7 +35,7 @@ bugs. The UI changes we've done will make a substantial difference in the
 experience of using Firefox on Android. Here are some of my favourite fixes and
 improvements.
 
-## Tabs
+### Tabs
 
 Details in the tabs UI can make a big difference UX-wise. We changed the tabs
 button icon (see image) to provide better affordance. The new icon also
@@ -47,7 +44,7 @@ features a much cooler animation when tabs are added or removed.
 Last but not least, we added a subtle parallax effect when you the open/close
 the tabs panel giving it a more fluid feel.
 
-## Address bar
+### Address bar
 
 As Wes has already
 [reported](http://digdug2k.wordpress.com/2013/04/29/show-urls-in-fennec/ "Show
@@ -58,7 +55,7 @@ gives us feature parity with Firefox on desktop.
 The reader and stop buttons now have properly sized hit areas to avoid tapping
 other parts of the toolbar by mistake—a long overdue issue.
 
-## That's not all
+### That's not all
 
 Reader Mode will get some nice style updates for serif fonts, doorhanger
 notifications now have a more polished animation, text selection handles have a
