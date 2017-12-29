@@ -20,13 +20,15 @@
     <link rel='stylesheet' id='highlight-css' href='{{ site.url }}/styles/highlight.css'>
     <link rel='stylesheet' id='style-css' href='{{ site.url }}/styles/site.css'>
 
-    <meta property="og:locale" content="{{ site.opengraph.locale }}">
-    <meta property="og:title" content="{% if page.title %}{{ page.title }} — {% endif %}{{ site.title }}">
-    <meta property="og:description" content="{% if page.description %}{{ page.description | strip_html | strip_newlines | truncate: 120 }}{% else %}{{ page.content | strip_html | strip_newlines | truncate: 120 }}{% endif %}">
+    <meta property="og:locale" content="en_GB">
+    <meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
+    <meta property="og:description" content="{{ page.content | strip_html | strip_newlines | truncate: 120 }}">
     <meta property="og:url" content="{{ site.url }}{{ page.url }}">
     <meta property="og:site_name" content="{{ site.title }}">
     {% if page.image %}
-    <meta property="og:image" content="{{ page.image }}">
+    <meta property="og:image" content="{{ site.url }}{{ page.image }}">
+    <meta name="twitter:image" content="{{ site.url }}{{ page.image }}">
+    <meta name="twitter:card" content="summary_large_image">
     {% endif %}
 
     <link href="{{ site.url }}/feed" type="application/atom+xml" rel="alternate" title="{{ site.title }} Feed">
