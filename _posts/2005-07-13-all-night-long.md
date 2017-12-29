@@ -1,10 +1,7 @@
 ---
-id: 53
 title: All night long
 date: 2005-07-13T13:17:58+00:00
-author: Lucas Rocha
 layout: post
-guid: http://blogs.gnome.org/lucasr/2005/07/13/all-night-long/
 permalink: /2005/07/13/all-night-long/
 categories:
   - General

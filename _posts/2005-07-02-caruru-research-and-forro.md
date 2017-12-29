@@ -1,10 +1,7 @@
 ---
-id: 47
 title: Caruru, research and forró
 date: 2005-07-02T23:09:39+00:00
-author: Lucas Rocha
 layout: post
-guid: http://blogs.gnome.org/lucasr/2005/07/02/caruru-research-and-forro/
 permalink: /2005/07/02/caruru-research-and-forro/
 categories:
   - General

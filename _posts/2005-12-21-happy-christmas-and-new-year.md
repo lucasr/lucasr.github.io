@@ -1,10 +1,7 @@
 ---
-id: 72
 title: Happy Christmas and New Year!
 date: 2005-12-21T18:35:45+00:00
-author: Lucas Rocha
 layout: post
-guid: http://blogs.gnome.org/lucasr/2005/12/21/happy-christmas-and-new-year/
 permalink: /2005/12/21/happy-christmas-and-new-year/
 categories:
   - General

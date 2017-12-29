@@ -1,10 +1,7 @@
 ---
-id: 52
 title: Movies and article
 date: 2005-07-12T11:50:47+00:00
-author: Lucas Rocha
 layout: post
-guid: http://blogs.gnome.org/lucasr/2005/07/12/movies-and-article/
 permalink: /2005/07/12/movies-and-article/
 categories:
   - General

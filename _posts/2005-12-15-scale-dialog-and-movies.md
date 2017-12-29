@@ -1,10 +1,7 @@
 ---
-id: 70
 title: Scale Dialog and Movies
 date: 2005-12-15T14:23:20+00:00
-author: Lucas Rocha
 layout: post
-guid: http://blogs.gnome.org/lucasr/2005/12/15/scale-dialog-and-movies/
 permalink: /2005/12/15/scale-dialog-and-movies/
 categories:
   - Free Software
@@ -20,15 +17,7 @@ tags:
   - Software
   - zenity
 ---
-**Scale Dialog**
-
-[<img class="alignnone size-full wp-image-1437" title="scale"
-src="http://lucasr.org/wp-content/uploads/2005/12/scale.png" alt="" width="310"
-height="144"
-srcset="http://lucasr.org/wp-content/uploads/2005/12/scale-300x139.png 300w,
-http://lucasr.org/wp-content/uploads/2005/12/scale.png 310w" sizes="(max-width:
-310px) 100vw, 310px"
-/>](http://lucasr.org/wp-content/uploads/2005/12/scale.png)
+### Scale Dialog
 
 Zenity now has a new scale dialog which can used to select a value from a range.
 
@@ -42,7 +31,10 @@ Zenity now has a new scale dialog which can used to select a value from a range.
   --print-partial                  Print partial values
   --hide-value                     Hide value</pre>
 
-**Movies**
+{% include figure.html src="/wp-content/uploads/2005/12/scale.png"
+caption="Scale dialog in zenity." %}
+
+### Movies
 
   * [Billy Eliott](http://imdb.com/title/tt0249462/) (nice!)
   * [The Island](http://imdb.com/title/tt0399201/) (too long, too boring, nice idea)

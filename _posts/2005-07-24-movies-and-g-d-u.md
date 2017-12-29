@@ -1,10 +1,7 @@
 ---
-id: 55
 title: Movies and g-d-u
 date: 2005-07-24T23:07:20+00:00
-author: Lucas Rocha
 layout: post
-guid: http://blogs.gnome.org/lucasr/2005/07/24/movies-and-g-d-u/
 permalink: /2005/07/24/movies-and-g-d-u/
 categories:
   - General

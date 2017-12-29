@@ -1,10 +1,7 @@
 ---
-id: 48
 title: More Zenity and planets
 date: 2005-07-04T16:28:19+00:00
-author: Lucas Rocha
 layout: post
-guid: http://blogs.gnome.org/lucasr/2005/07/04/more-zenity-and-planets/
 permalink: /2005/07/04/more-zenity-and-planets/
 categories:
   - General

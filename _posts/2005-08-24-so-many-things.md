@@ -1,10 +1,7 @@
 ---
-id: 59
 title: 'So many things...'
 date: 2005-08-24T23:46:31+00:00
-author: Lucas Rocha
 layout: post
-guid: http://blogs.gnome.org/lucasr/2005/08/24/so-many-things/
 permalink: /2005/08/24/so-many-things/
 categories:
   - Free Software
@@ -33,7 +30,8 @@ tags:
 It's been a long time I don't post anything. So, here are some stuff I've been
 doing.
 
-**Music**
+### Music
+
   * Coltrane (dudes, this is REALLY good!)
   * Miles Davis (two great albuns: "Bitches Brew" and "Time After Time")
   * The Brand New Heavies (cool acid jazz)
@@ -45,7 +43,7 @@ created the [GNOME Musician Index](http://live.gnome.org/GnomeMusicianIndex) at
 l.g.o. GNOMusicians, add yourselves there, so, we can have a huge jam session
 at GUADEC 7!
 
-**GNOME**
+### GNOME
 
 The last development Zenity "Muqueca" release (2.11.92) before GNOME 2.12 is
 out! Here are the news:
@@ -66,20 +64,20 @@ out! Here are the news:
 EOG was crashing when navigating through a directory with invalid images. [This
 bug](http://bugs.gnome.org/show_bug.cgi?id=311086) is solved now. :-)
 
-**Mastering**
+### Mastering
 
 I've finished a [little
 paper](https://gnosislivre.org/twiki/bin/view/CulturaHacker/ArtigoCibercultura2005)
 (in portuguese) about Free Software and Ciberculture. INHO, this paper is not
 good yet but the deadline forced me to release it.
 
-**Google Talk**
+### Google Talk
 
 Congratulations to Google for using jabber open protocol in [Google
 Talk](http://www.google.com/talk). My account is lucasr.at.mundo gmail com.
 Feel free to add me. :-)
 
-**Movies**
+### Movies
 
   * Fantastic Four (horribleeee! crap!)
   * Before Sunrise (cool)
@@ -87,7 +85,7 @@ Feel free to add me. :-)
   * Team America (good idea, no good content)
   * Million Dollar Baby (fantastic!)
 
-**GNOME Desktop Workshop**
+### GNOME Desktop Workshop
 
 I gave a workshop on GNOME Desktop as part of [FACED's Free Software
 Week](http://twiki.ufba.br/twiki/bin/view/RadioFACED/Programa%E7%E3oDaISemanaDeSoftwareLivreDaFaced).

@@ -1,10 +1,7 @@
 ---
-id: 58
 title: All we need is love!
 date: 2005-08-07T17:41:49+00:00
-author: Lucas Rocha
 layout: post
-guid: http://blogs.gnome.org/lucasr/2005/08/07/all-we-need-is-love/
 permalink: /2005/08/07/all-we-need-is-love/
 categories:
   - Free Software

@@ -1,10 +1,7 @@
 ---
-id: 67
 title: EOG, Zenity and Movies
 date: 2005-11-15T00:14:02+00:00
-author: Lucas Rocha
 layout: post
-guid: http://blogs.gnome.org/lucasr/2005/11/15/eog-zenity-and-movies/
 permalink: /2005/11/15/eog-zenity-and-movies/
 categories:
   - Free Software

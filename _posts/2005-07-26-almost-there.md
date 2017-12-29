@@ -1,10 +1,7 @@
 ---
-id: 56
 title: Almost there!
 date: 2005-07-26T09:55:00+00:00
-author: Lucas Rocha
 layout: post
-guid: http://blogs.gnome.org/lucasr/2005/07/26/almost-there/
 permalink: /2005/07/26/almost-there/
 categories:
   - General

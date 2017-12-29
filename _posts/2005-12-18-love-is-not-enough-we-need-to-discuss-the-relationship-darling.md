@@ -1,10 +1,7 @@
 ---
-id: 71
 title: Love is not enough. We need to discuss the relationship, darling!
 date: 2005-12-18T23:49:04+00:00
-author: Lucas Rocha
 layout: post
-guid: http://blogs.gnome.org/lucasr/2005/12/18/love-is-not-enough-we-need-to-discuss-the-relationship-darling/
 permalink: /2005/12/18/love-is-not-enough-we-need-to-discuss-the-relationship-darling/
 categories:
   - Free Software

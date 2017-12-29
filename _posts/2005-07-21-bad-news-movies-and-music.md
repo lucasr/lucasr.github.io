@@ -1,10 +1,7 @@
 ---
-id: 54
 title: Bad news, movies and music
 date: 2005-07-21T23:10:33+00:00
-author: Lucas Rocha
 layout: post
-guid: http://blogs.gnome.org/lucasr/2005/07/21/bad-news-movies-and-music/
 permalink: /2005/07/21/bad-news-movies-and-music/
 categories:
   - General

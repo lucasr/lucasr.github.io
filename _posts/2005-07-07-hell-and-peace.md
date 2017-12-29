@@ -1,10 +1,7 @@
 ---
-id: 49
 title: Hell and peace
 date: 2005-07-07T10:58:35+00:00
-author: Lucas Rocha
 layout: post
-guid: http://blogs.gnome.org/lucasr/2005/07/07/hell-and-peace/
 permalink: /2005/07/07/hell-and-peace/
 categories:
   - General

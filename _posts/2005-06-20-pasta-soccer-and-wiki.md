@@ -1,10 +1,7 @@
 ---
-id: 46
 title: Pasta, soccer and wiki
 date: 2005-06-20T09:22:52+00:00
-author: Lucas Rocha
 layout: post
-guid: http://blogs.gnome.org/lucasr/2005/06/20/pasta-soccer-and-wiki/
 permalink: /2005/06/20/pasta-soccer-and-wiki/
 categories:
   - General

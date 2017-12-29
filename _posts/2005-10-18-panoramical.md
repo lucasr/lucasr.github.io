@@ -1,10 +1,7 @@
 ---
-id: 62
 title: Panoramical
 date: 2005-10-18T01:17:00+00:00
-author: Lucas Rocha
 layout: post
-guid: http://blogs.gnome.org/lucasr/2005/10/18/panoramical/
 permalink: /2005/10/18/panoramical/
 categories:
   - Free Software
@@ -26,7 +23,7 @@ tags:
 ---
 I haven't being posting for a long time. So, I'll talk about some cool things I've done and seen in the last days...
 
-**EOG**
+### EOG
 
 I've been giving some love to EOG. It really needed it: lots of critical bugs
 (crashes!) and a "dirty" bug list on bugzilla. So, I cleaned up
@@ -38,7 +35,7 @@ for the next stable version. Sorry [Tim
 Gerla](http://blogs.conary.com/index.php/tgerla) about all those messages on
 IRC! I just want to keep you informed. :-)
 
-**Mallard**
+### Mallard
 
 I love [Project Mallard](http://www.gnome.org/~shaunm/quack/mallard.xml). The
 GNOME docs really needs some revamping. Considering that the users don't read
@@ -52,7 +49,7 @@ much more useful here. Some random ideas about this:
   will be written using an hypertextual topic-based approach. Very diferent
   from the current linear one.
 
-**Cool new projects**
+### Cool new projects
 
 Dogtail is a GUI test tool which will be VERY useful for QA stuff. It
 will be possible to reproduce bugs and perform several GUI tests by just
@@ -62,14 +59,14 @@ Tango (for GNU/Linux coherent desktop experience) and
 [BetterDesktop](http://betterdesktop.org/) (an interesting GNU/Linux usability
 effort) are great iniciatives!
 
-**Kill Wanda?**
+### Kill Wanda?
 
 There is a very [funny
 discussion](http://mail.gnome.org/archives/desktop-devel-list/2005-October/msg00134.html)
 about what should be done with the old fish Wanda. Don't kill her! It has a
 very historical meaning!
 
-**Projeto Software Livre Bahia**
+### Projeto Software Livre Bahia
 
 Our local [free software activism group](http://psl-ba.softwarelivre.org) has
 made its 2 years of existence! Congrats to all of us! Some

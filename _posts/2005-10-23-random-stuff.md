@@ -1,10 +1,7 @@
 ---
-id: 63
 title: Random stuff
 date: 2005-10-23T00:53:46+00:00
-author: Lucas Rocha
 layout: post
-guid: http://blogs.gnome.org/lucasr/2005/10/23/random-stuff/
 permalink: /2005/10/23/random-stuff/
 categories:
   - Free Software
@@ -21,19 +18,19 @@ tags:
   - movements
   - movie
 ---
-**More love to EOG**
+### More love to EOG
 
 Some more [bug
 cleaning](http://bugzilla.gnome.org/buglist.cgi?bug_id=314742,316004,307188).
 It's good to see that we came from 108 to 90 bugs. Well, there are lots of bugs
 to clean but I'm just happy to have some boring/critical bugs solved in EOG.
 
-**Movies**
+### Movies
 
   * [Monsters, Inc.](http://imdb.com/title/tt0198781/) — very funny!
   * [Out of Time](http://imdb.com/title/tt0313443/) — nice triller!
 
-**Movements and communities**
+### Movements and communities
 
 I gave a talk about some issues that I see as relevant about free software. One
 of the key subjects was the important distinction between the free software

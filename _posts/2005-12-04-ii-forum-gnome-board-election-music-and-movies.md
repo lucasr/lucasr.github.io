@@ -1,10 +1,7 @@
 ---
-id: 69
 title: II Fórum GNOME, Board Election, Music and Movies
 date: 2005-12-04T00:17:29+00:00
-author: Lucas Rocha
 layout: post
-guid: http://blogs.gnome.org/lucasr/2005/12/04/ii-forum-gnome-board-election-music-and-movies/
 permalink: /2005/12/04/ii-forum-gnome-board-election-music-and-movies/
 categories:
   - Free Software
@@ -27,7 +24,7 @@ tags:
   - ratm
   - tiago
 ---
-**II Fórum GNOME**
+### II Fórum GNOME
 
 Since I came back from [II Fórum GNOME](http://forumgnome.com.br/2005/), I
 didn't have any time for blogging. It's awful to arrive from a nice trip and
@@ -47,35 +44,19 @@ and to promote more local activities dedicated to people who want to start
 contributing to GNOME. See some photos
 [here](http://public.fotki.com/libertarios/lucasr/ii_frum_gnome/).
 
-<div style="width: 410px" class="wp-caption alignnone">
-  <img src="http://lucasr.org/wp-content/uploads/2005/12/german.jpg" alt="" width="400" height="300" />
-  <p class="wp-caption-text">
-    Germán, wake up!
-  </p>
-</div>
+{% include figure.html src="/wp-content/uploads/2005/12/german.jpg"
+caption="Germán, wake up!" %}
 
-<div style="width: 410px" class="wp-caption alignnone">
-  <img src="http://lucasr.org/wp-content/uploads/2005/12/fatalerrortim.jpg" alt="" width="400" height="300" />
-  <p class="wp-caption-text">
-    Tim and fatalerror
-  </p>
-</div>
+{% include figure.html src="/wp-content/uploads/2005/12/fatalerrortim.jpg"
+caption="Tim and fatalerror" %}
 
-<div style="width: 410px" class="wp-caption alignnone">
-  <img src="http://lucasr.org/wp-content/uploads/2005/12/workshop.jpg" alt="" width="400" height="300" />
-  <p class="wp-caption-text">
-    After brazilian translation workshop
-  </p>
-</div>
+{% include figure.html src="/wp-content/uploads/2005/12/workshop.jpg"
+caption="After the Brazilian translation workshop" %}
 
-<div style="width: 410px" class="wp-caption alignnone">
-  <img src="http://lucasr.org/wp-content/uploads/2005/12/igerman.jpg" alt="" width="400" height="300" />
-  <p class="wp-caption-text">
-    Gérman and I
-  </p>
-</div>
+{% include figure.html src="/wp-content/uploads/2005/12/igerman.jpg"
+caption="Germán and I" %}
 
-**GNOME Foundation Board elections**
+### GNOME Foundation Board elections
 
 I'm very happy with the GNOME political dynamic related to the elections of the
 board. Some very interesting discussion took place in
@@ -86,7 +67,7 @@ productive discussion). Therefore, here are my candidates: Jeff Waugh,
 Luis Villa, Germán Poó Caamaño, Jonathan Blandford, Quin Gil, Dave Neary and
 Vincent Untz.
 
-**Music**
+### Music
 
 I played percussion with my brother's (Tiago Rocha) band in his show at ACBEU
 Theater. His songs are mix of jazz, samba, bolero, classical and others.
@@ -101,7 +82,7 @@ Stuff I've been listening:
   * Fiona Apple
   * Rage Against the Machine
 
-**Movies**
+### Movies
 
   * [Her Name is Carla](http://imdb.com/title/tt0326367/) (nice photography, bad script)
   * [Nicotina](http://imdb.com/title/tt0337930/) (very funny!)

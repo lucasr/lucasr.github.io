@@ -1,10 +1,7 @@
 ---
-id: 61
 title: G12 and tiny hack
 date: 2005-09-06T14:43:19+00:00
-author: Lucas Rocha
 layout: post
-guid: http://blogs.gnome.org/lucasr/2005/09/06/g12-and-tiny-hack/
 permalink: /2005/09/06/g12-and-tiny-hack/
 categories:
   - Free Software
@@ -19,7 +16,7 @@ tags:
   - release
   - zenity
 ---
-**Zenity 2.12.0**
+### Zenity 2.12.0
 
 This is the final Zenity stable GNOME 2.12 release. News:
 
@@ -34,7 +31,7 @@ This is the final Zenity stable GNOME 2.12 release. News:
   * New documentation translations
       * Vincent Untz [fr]
 
-**Tiny hack**
+### Tiny hack
 
 I had some spare time in the last days, so I had a quick look at the [EOG
 critical bugs for GNOME
