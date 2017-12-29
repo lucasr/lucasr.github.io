@@ -14,3 +14,6 @@ owner:
 
 markdown: kramdown
 highlighter: rouge
+
+plugins:
+  - jekyll-feed
