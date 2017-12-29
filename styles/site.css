@@ -41,6 +41,7 @@ h6 {
 /* Entry */
 
 .entry-header > hgroup {
+  text-align: center;
   margin-top: 45px;
   margin-bottom: 30px;
 }
@@ -57,11 +58,10 @@ h6 {
   color: #212529;
 }
 
-.entry-date {
+.entry-subtitle {
   font-family: 'Source Sans Pro', sans-serif;
   font-size: 0.9em;
   font-weight: normal;
-  text-align: center;
   text-transform: uppercase;
 }
 
@@ -69,7 +69,7 @@ h6 {
   margin-top: 1.4em;
 }
 
-.entry-title,
+.entry-header > hgroup,
 .entry-content {
   padding-left: 100px;
   padding-right: 100px;
@@ -95,6 +95,24 @@ h6 {
   border-top: 1px solid #777777;
 }
 
+.entry-recent {
+  margin-top: 30px;
+  border-top: 1px solid #DDDDDD;
+  padding-top: 30px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+.entry-recent .entry-subtitle {
+  margin-top: 0px;
+}
+
+.entry-recent .entry-title {
+  margin-top: 2px;
+  margin-bottom: 10px;
+}
+
 pre.highlight {
   font-size: 0.8em;
   padding: 10px;
@@ -118,7 +136,7 @@ pre.highlight {
     font-size: 18px;
   }
 
-  .entry-title,
+  .entry-header > hgroup,
   .entry-content {
     padding-left: 20px;
     padding-right: 20px;
@@ -132,7 +150,7 @@ pre.highlight {
 }
 
 @media (min-width: 768px) and (max-width: 979px) {
-  .entry-title,
+  .entry-header > hgroup,
   .entry-content {
     padding-left: 20px;
     padding-right: 20px;

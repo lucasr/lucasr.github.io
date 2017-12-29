@@ -7,7 +7,7 @@
               <a href="{{ url }}" title="Permalink to {{ title }}" rel="bookmark">{{ title }}</a>
             </h1>
 
-            <h2 class="entry-date text-secondary">{{ date | date: "%B %d, %Y" }}</h2>
+            <h2 class="entry-subtitle text-secondary">{{ date | date: "%B %d, %Y" }}</h2>
           </hgroup>
 
           {% if image %}
@@ -25,6 +25,22 @@
               <span class="entry-author">{{ site.owner.name }}</span>
               {{ site.owner.bio }}
             </p>
+
+             <div class="entry-recent container">
+              <div class="row">
+                <div class="col-sm-auto">
+                  <h2 class="entry-subtitle text-secondary">Recent posts</h2>
+                </div>
+                <div class="col-sm">
+                  {% for post in site.posts limit:5 %}
+                    <h6 class="entry-title">
+                      <a href="{{ post.url }}">{{ post.title }}</a>
+                      <small class="text-muted">{{ post.date | date: "%B %d, %Y" }}</small>
+                    </h6>
+                  {% endfor %}
+                </div>
+              </div>
+            </div>
           </div> <!-- .entry-meta -->
 
         </div> <!-- .entry-content -->
