@@ -1,7 +1,7 @@
 ---
 title: About
 layout: page
-permalink: /about
+permalink: /about/
 ---
 
 Currently at Facebook managing teams focused on the development of frameworks
