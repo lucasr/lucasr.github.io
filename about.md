@@ -13,7 +13,7 @@ teams work on open source projects like [Litho](https://fblitho.com),
 Formerly, I was at Mozilla working on [Firefox for
 Android](https://www.mozilla.org/firefox/mobile/), one of the highest rated
 mobile browsers for Android. Before that, I worked at litl on the development
-of the [Webbook](http://litl.com/meet-webbook/overview.htm), a cloud-based
+of the [Webbook](https://en.wikipedia.org/wiki/Litl), a cloud-based
 computer for the family; and at Nokia implementing the system UI for the
 Maemo-based internet tablets, such as the
 [N810](http://en.wikipedia.org/wiki/Nokia_N810).
