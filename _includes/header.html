@@ -7,12 +7,7 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <meta name="description" content="{{ page.description }}">
     <meta name="keywords" content="{{ page.tags | join: ', ' }}">
-
-    <title>{% if page.title %}{{ page.title }} — {% endif %}{{ site.title }}</title>
-
-    <link rel="profile" href="http://gmpg.org/xfn/11" />
 
     <link rel='stylesheet' id='google-webfonts' href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700|Source+Serif+Pro:400,400i,700'>
     <link rel="stylesheet" id='bootstrap-css' href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
@@ -20,18 +15,8 @@
     <link rel='stylesheet' id='highlight-css' href='{{ site.url }}/styles/highlight.css'>
     <link rel='stylesheet' id='style-css' href='{{ site.url }}/styles/site.css'>
 
-    <meta property="og:locale" content="en_GB">
-    <meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
-    <meta property="og:description" content="{{ page.content | strip_html | strip_newlines | truncate: 120 }}">
-    <meta property="og:url" content="{{ site.url }}{{ page.url }}">
-    <meta property="og:site_name" content="{{ site.title }}">
-    {% if page.image %}
-    <meta property="og:image" content="{{ site.url }}{{ page.image }}">
-    <meta name="twitter:image" content="{{ site.url }}{{ page.image }}">
-    <meta name="twitter:card" content="summary_large_image">
-    {% endif %}
-
     {% feed_meta %}
+    {% seo %}
   </head>
 
   <body>
@@ -44,24 +29,24 @@
           <li class="nav-item">
             <a class="nav-link" aria-label="Feed" href="/feed.xml"><i class="fa fa-feed"></i></a>
           </li>
-          {% if site.owner.twitter %}
+          {% if site.author.twitter %}
           <li class="nav-item">
-              <a class="nav-link" aria-label="Twitter" href="https://twitter.com/{{ site.owner.twitter }}"><i class="fa fa-twitter"></i></a>
+              <a class="nav-link" aria-label="Twitter" href="https://twitter.com/{{ site.author.twitter }}"><i class="fa fa-twitter"></i></a>
           </li>
           {% endif %}
-          {% if site.owner.instagram %}
+          {% if site.author.instagram %}
           <li class="nav-item">
-            <a class="nav-link" aria-label="Instagram" href="https://instagram.com/{{ site.owner.instagram }}"><i class="fa fa-instagram"></i></a>
+            <a class="nav-link" aria-label="Instagram" href="https://instagram.com/{{ site.author.instagram }}"><i class="fa fa-instagram"></i></a>
           </li>
           {% endif %}
-          {% if site.owner.github %}
+          {% if site.author.github %}
           <li class="nav-item">
-            <a class="nav-link" aria-label="Github" href="https://github.com/{{ site.owner.github }}"><i class="fa fa-github-alt"></i></a>
+            <a class="nav-link" aria-label="Github" href="https://github.com/{{ site.author.github }}"><i class="fa fa-github-alt"></i></a>
           </li>
           {% endif %}
-          {% if site.owner.linkedin %}
+          {% if site.author.linkedin %}
           <li class="nav-item">
-            <a class="nav-link" aria-label="LinkedIn" href="https://linkedin.com/in/{{ site.owner.linkedin }}"><i class="fa fa-linkedin"></i></a>
+            <a class="nav-link" aria-label="LinkedIn" href="https://linkedin.com/in/{{ site.author.linkedin }}"><i class="fa fa-linkedin"></i></a>
           </li>
           {% endif %}
         </ul>

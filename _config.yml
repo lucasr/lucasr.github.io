@@ -2,8 +2,9 @@ title: Lucas Rocha
 tagline: Lucas Rocha
 description: Lucas Rocha's personal website.
 canonical: http://lucasr.org
+lang: en_GB
 
-owner:
+author:
   name: Lucas Rocha
   bio: UI Frameworks at Facebook. Formerly at Mozilla, GNOME, litl, and Nokia.
   email: lucasr@lucasr.org
@@ -17,3 +18,4 @@ highlighter: rouge
 
 plugins:
   - jekyll-feed
+  - jekyll-seo-tag
