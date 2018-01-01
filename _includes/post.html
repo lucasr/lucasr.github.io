@@ -27,21 +27,6 @@
               {{ site.author.bio }} <a href="/about">Read more.</a>
             </p>
 
-             <div class="entry-recent container">
-              <div class="row">
-                <div class="col-sm-auto">
-                  <h2 class="entry-subtitle text-secondary">Latest posts</h2>
-                </div>
-                <div class="col-sm">
-                  {% for post in site.posts limit:5 %}
-                    <h6 class="entry-title">
-                      <a href="{{ post.url }}">{{ post.title }}</a>
-                      <small class="text-muted">{{ post.date | date: "%B %d, %Y" }}</small>
-                    </h6>
-                  {% endfor %}
-                </div>
-              </div>
-            </div>
           </div> <!-- .entry-meta -->
 
         </div> <!-- .entry-content -->
