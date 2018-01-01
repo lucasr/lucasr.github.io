@@ -38,7 +38,6 @@ blockquote > p {
 .navbar {
   font-family: 'Source Sans Pro', sans-serif;
   border-bottom: 1px solid #DDDDDD;
-  border-top: 6px solid #66AFFF;
   padding-top: 0px;
   padding-bottom: 0px;
 }
@@ -79,7 +78,6 @@ blockquote > p {
   font-weight: normal;
   text-transform: uppercase;
   margin-top: 0px;
-  margin-bottom: 0px;
 }
 
 .entry-content {
