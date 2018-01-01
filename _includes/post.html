@@ -1,22 +1,23 @@
       <article>
 
-        <header class="entry-header">
-
-          <hgroup>
-            <h1 class="entry-title text-center">
-              <a href="{{ url }}" title="Permalink to {{ title }}" rel="bookmark">{{ title }}</a>
-            </h1>
-
-            <h2 class="entry-subtitle text-secondary">{{ date | date: "%B %d, %Y" }}</h2>
-          </hgroup>
-
-          {% if image %}
-          <img class="img-fluid entry-image" src="{{ image }}"/>
-          {% endif %}
-
-        </header> <!-- .entry-header -->
+        {% if image %}
+        <img class="img-fluid entry-image" src="{{ image }}"/>
+        {% endif %}
 
         <div class="entry-content">
+
+          <header class="entry-header">
+
+            <hgroup>
+              <h1 class="entry-title text-center">
+                <a href="{{ url }}" title="Permalink to {{ title }}" rel="bookmark">{{ title }}</a>
+              </h1>
+
+              <h2 class="entry-subtitle text-secondary">{{ date | date: "%B %d, %Y" }}</h2>
+            </hgroup>
+
+          </header> <!-- .entry-header -->
+
           {{ content }}
 
           <div class="entry-meta">
