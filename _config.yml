@@ -6,7 +6,10 @@ lang: en_GB
 
 author:
   name: Lucas Rocha
-  bio: UI Frameworks at Facebook. Formerly at Mozilla, GNOME, litl, and Nokia.
+  bio: >
+      Building UI frameworks and tools at Facebook in London.
+      Formerly at Mozilla, GNOME, litl, and Nokia.
+      Brazilian, husband, dad.
   email: lucasr@lucasr.org
   twitter: lucasratmundo
   linkedin: lucasr
