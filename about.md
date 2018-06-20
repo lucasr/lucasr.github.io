@@ -16,7 +16,7 @@ mobile browsers for Android. Before that, I worked at litl on the development
 of the [Webbook](https://en.wikipedia.org/wiki/Litl), a cloud-based
 computer for the family; and at Nokia implementing the system UI for the
 Maemo-based internet tablets, such as the
-[N810](http://en.wikipedia.org/wiki/Nokia_N810).
+[N810](https://en.wikipedia.org/wiki/Nokia_N810).
 
 I’ve been a core [GNOME](https://www.gnome.org) contributor in the past where I
 have taken several leadership roles such as [GNOME
