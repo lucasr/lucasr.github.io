@@ -7,7 +7,7 @@ permalink: /about/
 Currently at Facebook managing teams focused on the development of frameworks
 and tools for building efficient UIs at scale across multiple platforms. My
 teams work on open source projects like [Litho](https://fblitho.com),
-[Yoga](https://facebook.github.io/yoga), and
+[Sonar](https://fbsonar.com), [Yoga](https://yogalayout.com), and
 [ComponentKit](http://componentkit.org).
 
 Formerly, I was at Mozilla working on [Firefox for
