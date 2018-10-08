@@ -4,10 +4,10 @@ layout: page
 permalink: /about/
 ---
 
-Currently at Facebook managing teams focused on the development of frameworks
-and tools for building efficient UIs at scale across multiple platforms. My
-teams work on open source projects like [Litho](https://fblitho.com),
-[Sonar](https://fbsonar.com), [Yoga](https://yogalayout.com), and
+Currently at Facebook leading teams focused frameworks and tools for
+building efficient UIs at scale across iOS and Android. My teams work
+on open source projects like [Litho](https://fblitho.com),
+[Flipper](https://fbflipper.com), [Yoga](https://yogalayout.com), and
 [ComponentKit](http://componentkit.org).
 
 Formerly, I was at Mozilla working on [Firefox for
