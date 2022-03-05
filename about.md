@@ -7,7 +7,7 @@ permalink: /about/
 Currently at Meta supporting the Mobile Platform organization, a team of 100+
 engineers across the UK and US focused on accelerating high-quality mobile
 products at scale through a platform of frameworks and tools for the Family
-of Apps (Facebook, Messenger, Instagram, WhatsApp, and Facebook Lite).
+of Apps i.e. Facebook, Messenger, Instagram, WhatsApp, and Facebook Lite.
 The team works on open source projects like [Litho](https://fblitho.com),
 [GraphQL](https://graphql.org), [Flipper](https://fbflipper.com),
 [Yoga](https://yogalayout.com), and [ComponentKit](http://componentkit.org).
